@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{607711C8-7BDC-42C7-8D85-6DA16012239F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Code_QuickPurchase.My.MyApplication</StartupObject>
+    <RootNamespace>Code_QuickPurchase</RootNamespace>
+    <AssemblyName>Code_QuickPurchase</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Code_QuickPurchase.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Code_QuickPurchase.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fEaster.Designer.vb">
+      <DependentUpon>fEaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fEaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fListe_autumn.Designer.vb">
+      <DependentUpon>fListe_autumn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fListe_autumn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fListe_Christmas.Designer.vb">
+      <DependentUpon>fListe_Christmas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fListe_Christmas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLog.Designer.vb">
+      <DependentUpon>fLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMembers.Designer.vb">
+      <DependentUpon>fMembers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fMembers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPay.Designer.vb">
+      <DependentUpon>fPay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fPay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuickPurchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuickPurchase.Designer.vb">
+      <DependentUpon>fQuickPurchase.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fResearch.Designer.vb">
+      <DependentUpon>fResearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fResearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fScann.Designer.vb">
+      <DependentUpon>fScann.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fScann.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSearch.Designer.vb">
+      <DependentUpon>fSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSign.Designer.vb">
+      <DependentUpon>fSign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fSign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMenu.designer.vb">
+      <DependentUpon>fMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fListSpring.designer.vb">
+      <DependentUpon>fListSpring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fListSpring.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSummer.Designer.vb">
+      <DependentUpon>fSummer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fSummer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="fView.Designer.vb">
+      <DependentUpon>fView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="fEaster.resx">
+      <DependentUpon>fEaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fListe_autumn.resx">
+      <DependentUpon>fListe_autumn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fListe_Christmas.resx">
+      <DependentUpon>fListe_Christmas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLog.resx">
+      <DependentUpon>fLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMembers.resx">
+      <DependentUpon>fMembers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPay.resx">
+      <DependentUpon>fPay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fQuickPurchase.resx">
+      <DependentUpon>fQuickPurchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fResearch.resx">
+      <DependentUpon>fResearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fScann.resx">
+      <DependentUpon>fScann.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSearch.resx">
+      <DependentUpon>fSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSign.resx">
+      <DependentUpon>fSign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMenu.resx">
+      <DependentUpon>fMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fListSpring.resx">
+      <DependentUpon>fListSpring.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSummer.resx">
+      <DependentUpon>fSummer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fView.resx">
+      <DependentUpon>fView.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
