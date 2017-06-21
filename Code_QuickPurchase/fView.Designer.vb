@@ -26,11 +26,9 @@ Partial Class fView
         Me.lblTitre = New System.Windows.Forms.Label()
         Me.lblTitre2 = New System.Windows.Forms.Label()
         Me.pblBoutons2 = New System.Windows.Forms.Panel()
-        Me.btnList3 = New System.Windows.Forms.Button()
-        Me.btnList2 = New System.Windows.Forms.Button()
-        Me.btnList1 = New System.Windows.Forms.Button()
         Me.btnCharger = New System.Windows.Forms.Button()
         Me.btnReturn = New System.Windows.Forms.Button()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.pnlTitre1.SuspendLayout()
         Me.pblBoutons2.SuspendLayout()
         Me.SuspendLayout()
@@ -73,44 +71,12 @@ Partial Class fView
         '
         'pblBoutons2
         '
-        Me.pblBoutons2.Controls.Add(Me.btnList3)
-        Me.pblBoutons2.Controls.Add(Me.btnList2)
-        Me.pblBoutons2.Controls.Add(Me.btnList1)
+        Me.pblBoutons2.Controls.Add(Me.ListBox1)
         Me.pblBoutons2.Controls.Add(Me.btnCharger)
         Me.pblBoutons2.Location = New System.Drawing.Point(0, 151)
         Me.pblBoutons2.Name = "pblBoutons2"
         Me.pblBoutons2.Size = New System.Drawing.Size(284, 310)
         Me.pblBoutons2.TabIndex = 1
-        '
-        'btnList3
-        '
-        Me.btnList3.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnList3.Location = New System.Drawing.Point(45, 235)
-        Me.btnList3.Name = "btnList3"
-        Me.btnList3.Size = New System.Drawing.Size(199, 23)
-        Me.btnList3.TabIndex = 3
-        Me.btnList3.Text = "List 3"
-        Me.btnList3.UseVisualStyleBackColor = True
-        '
-        'btnList2
-        '
-        Me.btnList2.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnList2.Location = New System.Drawing.Point(45, 165)
-        Me.btnList2.Name = "btnList2"
-        Me.btnList2.Size = New System.Drawing.Size(199, 23)
-        Me.btnList2.TabIndex = 2
-        Me.btnList2.Text = "List 2 "
-        Me.btnList2.UseVisualStyleBackColor = True
-        '
-        'btnList1
-        '
-        Me.btnList1.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnList1.Location = New System.Drawing.Point(45, 97)
-        Me.btnList1.Name = "btnList1"
-        Me.btnList1.Size = New System.Drawing.Size(199, 23)
-        Me.btnList1.TabIndex = 1
-        Me.btnList1.Text = "List 1"
-        Me.btnList1.UseVisualStyleBackColor = True
         '
         'btnCharger
         '
@@ -132,6 +98,14 @@ Partial Class fView
         Me.btnReturn.Text = "Return"
         Me.btnReturn.UseVisualStyleBackColor = True
         '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(45, 69)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(199, 212)
+        Me.ListBox1.TabIndex = 1
+        '
         'fView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -152,11 +126,9 @@ Partial Class fView
 
     Friend WithEvents pnlTitre1 As Panel
     Friend WithEvents pblBoutons2 As Panel
-    Friend WithEvents btnList3 As Button
-    Friend WithEvents btnList2 As Button
-    Friend WithEvents btnList1 As Button
     Friend WithEvents btnCharger As Button
     Friend WithEvents btnReturn As Button
     Friend WithEvents lblTitre2 As Label
     Friend WithEvents lblTitre As Label
+    Friend WithEvents ListBox1 As ListBox
 End Class

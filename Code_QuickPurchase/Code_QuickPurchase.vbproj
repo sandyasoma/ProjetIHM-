@@ -102,6 +102,12 @@
     <Compile Include="fMembers.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="fNameList.Designer.vb">
+      <DependentUpon>fNameList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fNameList.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="fPay.Designer.vb">
       <DependentUpon>fPay.vb</DependentUpon>
     </Compile>
@@ -194,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fMembers.resx">
       <DependentUpon>fMembers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNameList.resx">
+      <DependentUpon>fNameList.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fPay.resx">
       <DependentUpon>fPay.vb</DependentUpon>

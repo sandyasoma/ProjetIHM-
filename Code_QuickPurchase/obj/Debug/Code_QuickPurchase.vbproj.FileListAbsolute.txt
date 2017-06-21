@@ -27,3 +27,4 @@ F:\IHM\Projet\Code_QuickPurchase\Code_QuickPurchase\bin\Debug\Code_QuickPurchase
 F:\IHM\Projet\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.exe
 F:\IHM\Projet\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.xml
 F:\IHM\Projet\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.pdb
+E:\IHM\Projet\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.fNameList.resources
