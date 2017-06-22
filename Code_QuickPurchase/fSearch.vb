@@ -7,11 +7,13 @@
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         fResearch.Show()
+        fResearch.BringToFront()
         Dispose()
     End Sub
 
     Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
         fMenu.Show()
+        fMenu.BringToFront()
         Dispose()
     End Sub
 End Class

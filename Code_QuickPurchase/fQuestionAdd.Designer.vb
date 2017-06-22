@@ -68,7 +68,6 @@ Partial Class fQuestionAdd
         Me.txtquan.Name = "txtquan"
         Me.txtquan.Size = New System.Drawing.Size(57, 20)
         Me.txtquan.TabIndex = 47
-        Me.txtquan.Visible = False
         '
         'lblquantity
         '
@@ -79,7 +78,6 @@ Partial Class fQuestionAdd
         Me.lblquantity.Size = New System.Drawing.Size(91, 23)
         Me.lblquantity.TabIndex = 46
         Me.lblquantity.Text = " Quantity :"
-        Me.lblquantity.Visible = False
         '
         'Label2
         '
@@ -107,9 +105,8 @@ Partial Class fQuestionAdd
         Me.lblArticle.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblArticle.Location = New System.Drawing.Point(111, 56)
         Me.lblArticle.Name = "lblArticle"
-        Me.lblArticle.Size = New System.Drawing.Size(53, 23)
+        Me.lblArticle.Size = New System.Drawing.Size(0, 23)
         Me.lblArticle.TabIndex = 43
-        Me.lblArticle.Text = "Name"
         '
         'fQuestionAdd
         '

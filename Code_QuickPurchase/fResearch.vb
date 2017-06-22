@@ -15,15 +15,24 @@
 
     Private Sub EventValidatedSub()
         'Ta condition
+
         lblquantity.Visible = True
         txtquan.Visible = True
         btnAdd.Enabled = True
         btnAdd.Visible = True
+        pbxBraided.Visible = False
+        pbxBread.Visible = False
+        pbxSoft.Visible = False
+
+        lstBread.Visible = False
+        lstprice.Visible = False
         If (txtSearch.Text <> "") Then
             Dim random As New Random
             lblArtticle.Text = txtSearch.Text
             priceArticle = random.Next(0, 100)
             lblPrice.Text = Convert.ToString(priceArticle)
+            lblArtticle.Visible = True
+            lblPrice.Visible = True
         Else
             MsgBox("Please enter a field in the Search Field", MsgBoxStyle.Critical, "Warning !")
         End If
@@ -32,14 +41,28 @@
     Private Sub txtSearch_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
 
         If (txtSearch.Text = "bread") Then
+            lblArtticle.Visible = False
+            lblPrice.Visible = False
             pbxBraided.Visible = True
             pbxBread.Visible = True
             pbxSoft.Visible = True
 
             lstBread.Visible = True
+            lstprice.Visible = True
             lblquantity.Visible = True
             txtquan.Visible = True
             btnAdd.Visible = True
+
+        Else
+
+            pbxBraided.Visible = False
+            pbxBread.Visible = False
+            pbxSoft.Visible = False
+
+            lstBread.Visible = False
+            lstprice.Visible = False
+
+
 
         End If
     End Sub
@@ -62,6 +85,7 @@
         'Si on est en été on ajoute à la liste correspondante
         If (Date.Now.Month = 6 And Date.Now.Day >= 21 And Date.Now.Day <= 30) Then
             fSummer.Show()
+            fSummer.BringToFront()
             'Si la recherche = bread on affiche son résultat coresspondant
             If (txtSearch.Text = "bread") Then
 
@@ -74,17 +98,16 @@
                 End If
                 If (lstBread.SelectedItem = "Soft bread") Then
                     Dim prixSoftBread As Double = 0
-                    prixSoftBread = (0.5 * Convert.ToDouble(txtquan.Text))
+                    prixSoftBread = (1 * Convert.ToDouble(txtquan.Text))
                     fSummer.calculerPrice(prixSoftBread)
                     fSummer.lstprice.Items.Add(prixSoftBread.ToString)
                 End If
                 If (lstBread.SelectedItem = "Braided bread") Then
                     Dim prixBraidedBread As Double = 0
-                    prixBraidedBread = (0.5 * Convert.ToDouble(txtquan.Text))
+                    prixBraidedBread = (2 * Convert.ToDouble(txtquan.Text))
                     fSummer.calculerPrice(prixBraidedBread)
                     fSummer.lstprice.Items.Add(prixBraidedBread.ToString)
                 End If
-                fSummer.Show()
             Else
                 'Si on cherche n'importe quel article
                 fSummer.lstArticle.Items.Add(lblArtticle.Text)
@@ -96,6 +119,7 @@
         'Si on est en été on ajoute à la liste correspondante
         If (Date.Now.Month = 7 Or Date.Now.Month = 8 And Date.Now.Day = 1 And Date.Now.Day = 31) Then
             fSummer.Show()
+            fSummer.BringToFront()
             If (txtSearch.Text = "bread") Then
 
                 fSummer.lstArticle.Items.Add(lstBread.SelectedItem)
@@ -107,13 +131,13 @@
                 End If
                 If (lstBread.SelectedItem = "Soft bread") Then
                     Dim prixSoftBread As Double = 0
-                    prixSoftBread = (0.5 * Convert.ToDouble(txtquan.Text))
+                    prixSoftBread = (1 * Convert.ToDouble(txtquan.Text))
                     fSummer.calculerPrice(prixSoftBread)
                     fSummer.lstprice.Items.Add(prixSoftBread.ToString)
                 End If
                 If (lstBread.SelectedItem = "Braided bread") Then
                     Dim prixBraidedBread As Double = 0
-                    prixBraidedBread = (0.5 * Convert.ToDouble(txtquan.Text))
+                    prixBraidedBread = (2 * Convert.ToDouble(txtquan.Text))
                     fSummer.calculerPrice(prixBraidedBread)
                     fSummer.lstprice.Items.Add(prixBraidedBread.ToString)
                 End If
@@ -129,6 +153,7 @@
         'Si on est en été on ajoute à la liste correspondante
         If (Date.Now.Month = 9 And Date.Now.Day >= 1 And Date.Now.Day <= 21) Then
             fSummer.Show()
+            fSummer.BringToFront()
             If (txtSearch.Text = "bread") Then
 
                 fSummer.lstArticle.Items.Add(lstBread.SelectedItem)
@@ -140,13 +165,13 @@
                 End If
                 If (lstBread.SelectedItem = "Soft bread") Then
                     Dim prixSoftBread As Double = 0
-                    prixSoftBread = (0.5 * Convert.ToDouble(txtquan.Text))
+                    prixSoftBread = (1 * Convert.ToDouble(txtquan.Text))
                     fSummer.calculerPrice(prixSoftBread)
                     fSummer.lstprice.Items.Add(prixSoftBread.ToString)
                 End If
                 If (lstBread.SelectedItem = "Braided bread") Then
                     Dim prixBraidedBread As Double = 0
-                    prixBraidedBread = (0.5 * Convert.ToDouble(txtquan.Text))
+                    prixBraidedBread = (2 * Convert.ToDouble(txtquan.Text))
                     fSummer.calculerPrice(prixBraidedBread)
                     fSummer.lstprice.Items.Add(prixBraidedBread.ToString)
                 End If
@@ -164,6 +189,7 @@
         'Si c'est pacques on affiche
         If (Date.Now.Month = 4 And Date.Now.Day >= 1 And Date.Now.Day <= 30) Then
             fEaster.Show()
+            fEaster.BringToFront()
             If (txtSearch.Text = "bread") Then
 
                 fEaster.lstArticle.Items.Add(lstBread.SelectedItem)
@@ -175,13 +201,13 @@
                 End If
                 If (lstBread.SelectedItem = "Soft bread") Then
                     Dim prixSoftBread As Double = 0
-                    prixSoftBread = (0.5 * Convert.ToDouble(txtquan.Text))
+                    prixSoftBread = (1 * Convert.ToDouble(txtquan.Text))
                     fEaster.calculerPrice(prixSoftBread)
                     fEaster.lstprice.Items.Add(prixSoftBread.ToString)
                 End If
                 If (lstBread.SelectedItem = "Braided bread") Then
                     Dim prixBraidedBread As Double = 0
-                    prixBraidedBread = (0.5 * Convert.ToDouble(txtquan.Text))
+                    prixBraidedBread = (2 * Convert.ToDouble(txtquan.Text))
                     fEaster.calculerPrice(prixBraidedBread)
                     fEaster.lstprice.Items.Add(prixBraidedBread.ToString)
                 End If
@@ -198,6 +224,7 @@
         'Si c'est l'automne on affiche
         If (Date.Now.Month = 9 And Date.Now.Day >= 21 And Date.Now.Day <= 30) Then
             fListe_autumn.Show()
+            fListe_autumn.BringToFront()
             If (txtSearch.Text = "bread") Then
 
                 fListe_autumn.lstArticle.Items.Add(lstBread.SelectedItem)
@@ -209,13 +236,13 @@
                 End If
                 If (lstBread.SelectedItem = "Soft bread") Then
                     Dim prixSoftBread As Double = 0
-                    prixSoftBread = (0.5 * Convert.ToDouble(txtquan.Text))
+                    prixSoftBread = (1 * Convert.ToDouble(txtquan.Text))
                     fListe_autumn.calculerPrice(prixSoftBread)
                     fListe_autumn.lstprice.Items.Add(prixSoftBread.ToString)
                 End If
                 If (lstBread.SelectedItem = "Braided bread") Then
                     Dim prixBraidedBread As Double = 0
-                    prixBraidedBread = (0.5 * Convert.ToDouble(txtquan.Text))
+                    prixBraidedBread = (2 * Convert.ToDouble(txtquan.Text))
                     fListe_autumn.calculerPrice(prixBraidedBread)
                     fListe_autumn.lstprice.Items.Add(prixBraidedBread.ToString)
                 End If
@@ -231,6 +258,7 @@
         'Si c'est l'automne on affiche
         If (Date.Now.Month = 10 Or Date.Now.Month = 11 And Date.Now.Day = 1 And Date.Now.Day = 31) Then
             fListe_autumn.Show()
+            fListe_autumn.BringToFront()
             If (txtSearch.Text = "bread") Then
 
                 fListe_autumn.lstArticle.Items.Add(lstBread.SelectedItem)
@@ -242,13 +270,13 @@
                 End If
                 If (lstBread.SelectedItem = "Soft bread") Then
                     Dim prixSoftBread As Double = 0
-                    prixSoftBread = (0.5 * Convert.ToDouble(txtquan.Text))
+                    prixSoftBread = (1 * Convert.ToDouble(txtquan.Text))
                     fListe_autumn.calculerPrice(prixSoftBread)
                     fListe_autumn.lstprice.Items.Add(prixSoftBread.ToString)
                 End If
                 If (lstBread.SelectedItem = "Braided bread") Then
                     Dim prixBraidedBread As Double = 0
-                    prixBraidedBread = (0.5 * Convert.ToDouble(txtquan.Text))
+                    prixBraidedBread = (2 * Convert.ToDouble(txtquan.Text))
                     fListe_autumn.calculerPrice(prixBraidedBread)
                     fListe_autumn.lstprice.Items.Add(prixBraidedBread.ToString)
                 End If
@@ -265,6 +293,8 @@
         'Si c'est Noel on affiche
         If (Date.Now.Month = 12 Or Date.Now.Month = 1 Or Date.Now.Month = 2 And Date.Now.Day = 1 And Date.Now.Day = 31) Then
             fListe_Christmas.Show()
+            fListe_Christmas.BringToFront()
+
             If (txtSearch.Text = "bread") Then
 
                 fListe_Christmas.lstArticle.Items.Add(lstBread.SelectedItem)
@@ -276,13 +306,13 @@
                 End If
                 If (lstBread.SelectedItem = "Soft bread") Then
                     Dim prixSoftBread As Double = 0
-                    prixSoftBread = (0.5 * Convert.ToDouble(txtquan.Text))
+                    prixSoftBread = (1 * Convert.ToDouble(txtquan.Text))
                     fListe_Christmas.calculerPrice(prixSoftBread)
                     fListe_Christmas.lstprice.Items.Add(prixSoftBread.ToString)
                 End If
                 If (lstBread.SelectedItem = "Braided bread") Then
                     Dim prixBraidedBread As Double = 0
-                    prixBraidedBread = (0.5 * Convert.ToDouble(txtquan.Text))
+                    prixBraidedBread = (2 * Convert.ToDouble(txtquan.Text))
                     fListe_Christmas.calculerPrice(prixBraidedBread)
                     fListe_Christmas.lstprice.Items.Add(prixBraidedBread.ToString)
                 End If
@@ -299,6 +329,8 @@
         'Si c'est le printemps
         If (Date.Now.Month = 3 Or Date.Now.Month = 5 And Date.Now.Day >= 1 And Date.Now.Day <= 31) Then
             fListe_Spring.Show()
+            fListe_Spring.BringToFront()
+
             If (txtSearch.Text = "bread") Then
 
                 fListe_Spring.lstArticle.Items.Add(lstBread.SelectedItem)
@@ -310,13 +342,13 @@
                 End If
                 If (lstBread.SelectedItem = "Soft bread") Then
                     Dim prixSoftBread As Double = 0
-                    prixSoftBread = (0.5 * Convert.ToDouble(txtquan.Text))
+                    prixSoftBread = (1 * Convert.ToDouble(txtquan.Text))
                     fListe_Spring.calculerPrice(prixSoftBread)
                     fListe_Spring.lstprice.Items.Add(prixSoftBread.ToString)
                 End If
                 If (lstBread.SelectedItem = "Braided bread") Then
                     Dim prixBraidedBread As Double = 0
-                    prixBraidedBread = (0.5 * Convert.ToDouble(txtquan.Text))
+                    prixBraidedBread = (2 * Convert.ToDouble(txtquan.Text))
                     fListe_Spring.calculerPrice(prixBraidedBread)
                     fListe_Spring.lstprice.Items.Add(prixBraidedBread.ToString)
                 End If
@@ -333,6 +365,8 @@
         'Si c'est le printemps
         If (Date.Now.Month = 6 And Date.Now.Day >= 1 And Date.Now.Day <= 21) Then
             fListe_Spring.Show()
+            fListe_Spring.BringToFront()
+
             If (txtSearch.Text = "bread") Then
 
                 fListe_Spring.lstArticle.Items.Add(lstBread.SelectedItem)
@@ -344,13 +378,13 @@
                 End If
                 If (lstBread.SelectedItem = "Soft bread") Then
                     Dim prixSoftBread As Double = 0
-                    prixSoftBread = (0.5 * Convert.ToDouble(txtquan.Text))
+                    prixSoftBread = (1 * Convert.ToDouble(txtquan.Text))
                     fListe_Spring.calculerPrice(prixSoftBread)
                     fListe_Spring.lstprice.Items.Add(prixSoftBread.ToString)
                 End If
                 If (lstBread.SelectedItem = "Braided bread") Then
                     Dim prixBraidedBread As Double = 0
-                    prixBraidedBread = (0.5 * Convert.ToDouble(txtquan.Text))
+                    prixBraidedBread = (2 * Convert.ToDouble(txtquan.Text))
                     fListe_Spring.calculerPrice(prixBraidedBread)
                     fListe_Spring.lstprice.Items.Add(prixBraidedBread.ToString)
                 End If
@@ -367,14 +401,20 @@
     End Sub
 
     Private Sub lstBread_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstBread.SelectedIndexChanged
-        If (lstBread.SelectedItem = "") Then
-            btnAdd.Enabled = False
-        Else
+        If (lstBread.SelectedItem <> "" And txtquan.Text <> "" And txtquan.Text <> "0") Then
             btnAdd.Enabled = True
+        Else
+            btnAdd.Enabled = False
         End If
     End Sub
 
     Private Sub fResearch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
+
+    Private Sub txtquan_TextChanged(sender As Object, e As EventArgs) Handles txtquan.TextChanged
+        If (txtquan.Text <> "" And txtquan.Text <> "0") Then
+            btnAdd.Enabled = True
+        End If
     End Sub
 End Class

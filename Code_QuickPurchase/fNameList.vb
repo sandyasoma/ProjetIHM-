@@ -61,7 +61,7 @@
             fQuestionAdd.Show()
             Dispose()
         Else
-            fMenu.Show()
+            fMenu.BringToFront()
             Dispose()
         End If
     End Sub

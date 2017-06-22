@@ -1,7 +1,7 @@
 ﻿Public Class fListe_Christmas
     Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
         fMenu.Show()
-        Dispose()
+
     End Sub
     Dim priceTot As Double = 0
     Public Sub calculerPrice(price As Double)

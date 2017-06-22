@@ -29,6 +29,8 @@ Partial Class fView
         Me.lstBoxListe = New System.Windows.Forms.ListBox()
         Me.btnCharger = New System.Windows.Forms.Button()
         Me.btnReturn = New System.Windows.Forms.Button()
+        Me.btnModify = New System.Windows.Forms.Button()
+        Me.btnDelete = New System.Windows.Forms.Button()
         Me.pnlTitre1.SuspendLayout()
         Me.pblBoutons2.SuspendLayout()
         Me.SuspendLayout()
@@ -71,6 +73,8 @@ Partial Class fView
         '
         'pblBoutons2
         '
+        Me.pblBoutons2.Controls.Add(Me.btnDelete)
+        Me.pblBoutons2.Controls.Add(Me.btnModify)
         Me.pblBoutons2.Controls.Add(Me.lstBoxListe)
         Me.pblBoutons2.Controls.Add(Me.btnCharger)
         Me.pblBoutons2.Location = New System.Drawing.Point(0, 151)
@@ -83,7 +87,7 @@ Partial Class fView
         Me.lstBoxListe.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lstBoxListe.FormattingEnabled = True
         Me.lstBoxListe.ItemHeight = 23
-        Me.lstBoxListe.Location = New System.Drawing.Point(45, 69)
+        Me.lstBoxListe.Location = New System.Drawing.Point(45, 32)
         Me.lstBoxListe.Name = "lstBoxListe"
         Me.lstBoxListe.Size = New System.Drawing.Size(199, 211)
         Me.lstBoxListe.TabIndex = 1
@@ -91,7 +95,7 @@ Partial Class fView
         'btnCharger
         '
         Me.btnCharger.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCharger.Location = New System.Drawing.Point(45, 30)
+        Me.btnCharger.Location = New System.Drawing.Point(45, 3)
         Me.btnCharger.Name = "btnCharger"
         Me.btnCharger.Size = New System.Drawing.Size(199, 23)
         Me.btnCharger.TabIndex = 0
@@ -107,6 +111,26 @@ Partial Class fView
         Me.btnReturn.TabIndex = 5
         Me.btnReturn.Text = "Return"
         Me.btnReturn.UseVisualStyleBackColor = True
+        '
+        'btnModify
+        '
+        Me.btnModify.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModify.Location = New System.Drawing.Point(205, 270)
+        Me.btnModify.Name = "btnModify"
+        Me.btnModify.Size = New System.Drawing.Size(67, 29)
+        Me.btnModify.TabIndex = 6
+        Me.btnModify.Text = "Modify"
+        Me.btnModify.UseVisualStyleBackColor = True
+        '
+        'btnDelete
+        '
+        Me.btnDelete.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDelete.Location = New System.Drawing.Point(12, 270)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(67, 29)
+        Me.btnDelete.TabIndex = 7
+        Me.btnDelete.Text = "Delete"
+        Me.btnDelete.UseVisualStyleBackColor = True
         '
         'fView
         '
@@ -133,4 +157,6 @@ Partial Class fView
     Friend WithEvents lblTitre2 As Label
     Friend WithEvents lblTitre As Label
     Friend WithEvents lstBoxListe As ListBox
+    Friend WithEvents btnDelete As Button
+    Friend WithEvents btnModify As Button
 End Class

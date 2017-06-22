@@ -10,7 +10,7 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnValidate.Click
         fView.Show()
-        Dispose()
+        fView.BringToFront()
     End Sub
 
     Private Sub fMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -19,11 +19,12 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         fNameList.Show()
-        Dispose()
+        fNameList.BringToFront()
+
     End Sub
 
     Private Sub btnLook_Click(sender As Object, e As EventArgs) Handles btnLook.Click
         fLook.Show()
-        Dispose()
+        fLook.BringToFront()
     End Sub
 End Class

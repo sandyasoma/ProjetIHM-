@@ -144,6 +144,7 @@ Partial Class fResearch
         '
         'btnAdd
         '
+        Me.btnAdd.Enabled = False
         Me.btnAdd.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAdd.Location = New System.Drawing.Point(68, 387)
         Me.btnAdd.Name = "btnAdd"
@@ -205,6 +206,7 @@ Partial Class fResearch
         Me.lblArtticle.Size = New System.Drawing.Size(63, 23)
         Me.lblArtticle.TabIndex = 38
         Me.lblArtticle.Text = "Article"
+        Me.lblArtticle.Visible = False
         '
         'lblPrice
         '
@@ -215,6 +217,7 @@ Partial Class fResearch
         Me.lblPrice.Size = New System.Drawing.Size(48, 23)
         Me.lblPrice.TabIndex = 39
         Me.lblPrice.Text = "price"
+        Me.lblPrice.Visible = False
         '
         'fResearch
         '
