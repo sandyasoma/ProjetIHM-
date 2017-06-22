@@ -24,12 +24,12 @@ Partial Class fLook
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(fLook))
         Me.pnlTitre1 = New System.Windows.Forms.Panel()
-        Me.lblTitre = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblTitre = New System.Windows.Forms.Label()
         Me.btnReturn = New System.Windows.Forms.Button()
         Me.lblForYou = New System.Windows.Forms.Label()
         Me.pbxFemale = New System.Windows.Forms.PictureBox()
@@ -80,51 +80,15 @@ Partial Class fLook
         Me.pnlTitre1.Size = New System.Drawing.Size(285, 75)
         Me.pnlTitre1.TabIndex = 1
         '
-        'lblTitre
+        'Label5
         '
-        Me.lblTitre.AutoSize = True
-        Me.lblTitre.BackColor = System.Drawing.Color.Transparent
-        Me.lblTitre.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitre.ForeColor = System.Drawing.Color.White
-        Me.lblTitre.Location = New System.Drawing.Point(38, 9)
-        Me.lblTitre.Name = "lblTitre"
-        Me.lblTitre.Size = New System.Drawing.Size(206, 38)
-        Me.lblTitre.TabIndex = 4
-        Me.lblTitre.Text = "QuickPurchase"
-        Me.lblTitre.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Cyan
-        Me.Label1.Location = New System.Drawing.Point(12, 47)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(22, 23)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "A"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Coral
-        Me.Label2.Location = New System.Drawing.Point(30, 47)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(64, 23)
-        Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Special"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.Magenta
-        Me.Label3.Location = New System.Drawing.Point(91, 47)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(79, 23)
-        Me.Label3.TabIndex = 7
-        Me.Label3.Text = "Selection"
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.DeepPink
+        Me.Label5.Location = New System.Drawing.Point(201, 47)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(0, 23)
+        Me.Label5.TabIndex = 9
         '
         'Label4
         '
@@ -137,15 +101,51 @@ Partial Class fLook
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "For"
         '
-        'Label5
+        'Label3
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.DeepPink
-        Me.Label5.Location = New System.Drawing.Point(201, 47)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(0, 23)
-        Me.Label5.TabIndex = 9
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Magenta
+        Me.Label3.Location = New System.Drawing.Point(91, 47)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(79, 23)
+        Me.Label3.TabIndex = 7
+        Me.Label3.Text = "Selection"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Coral
+        Me.Label2.Location = New System.Drawing.Point(30, 47)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(64, 23)
+        Me.Label2.TabIndex = 6
+        Me.Label2.Text = "Special"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Cyan
+        Me.Label1.Location = New System.Drawing.Point(12, 47)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(22, 23)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "A"
+        '
+        'lblTitre
+        '
+        Me.lblTitre.AutoSize = True
+        Me.lblTitre.BackColor = System.Drawing.Color.Transparent
+        Me.lblTitre.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitre.ForeColor = System.Drawing.Color.White
+        Me.lblTitre.Location = New System.Drawing.Point(38, 9)
+        Me.lblTitre.Name = "lblTitre"
+        Me.lblTitre.Size = New System.Drawing.Size(206, 38)
+        Me.lblTitre.TabIndex = 4
+        Me.lblTitre.Text = "QuickPurchase"
+        Me.lblTitre.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'btnReturn
         '

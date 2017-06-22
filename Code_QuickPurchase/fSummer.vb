@@ -19,4 +19,7 @@
 
     End Sub
 
+    Private Sub fSummer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

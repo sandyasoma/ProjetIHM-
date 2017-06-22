@@ -30,7 +30,12 @@ Partial Class fListe_autumn
         Me.btnReturn = New System.Windows.Forms.Button()
         Me.pbxSearch = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.lstArticle = New System.Windows.Forms.ListBox()
+        Me.lstprice = New System.Windows.Forms.ListBox()
+        Me.btnSend = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblprice = New System.Windows.Forms.Label()
+        Me.btnfinish = New System.Windows.Forms.Button()
         Me.pnlTitre.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxSearch, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -112,15 +117,67 @@ Partial Class fListe_autumn
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "lblTitre"
         '
-        'ListBox1
+        'lstArticle
         '
-        Me.ListBox1.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 23
-        Me.ListBox1.Location = New System.Drawing.Point(12, 121)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(248, 303)
-        Me.ListBox1.TabIndex = 13
+        Me.lstArticle.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstArticle.FormattingEnabled = True
+        Me.lstArticle.ItemHeight = 23
+        Me.lstArticle.Location = New System.Drawing.Point(20, 132)
+        Me.lstArticle.Name = "lstArticle"
+        Me.lstArticle.Size = New System.Drawing.Size(156, 257)
+        Me.lstArticle.TabIndex = 15
+        '
+        'lstprice
+        '
+        Me.lstprice.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstprice.FormattingEnabled = True
+        Me.lstprice.ItemHeight = 23
+        Me.lstprice.Location = New System.Drawing.Point(190, 132)
+        Me.lstprice.Name = "lstprice"
+        Me.lstprice.Size = New System.Drawing.Size(82, 257)
+        Me.lstprice.TabIndex = 16
+        '
+        'btnSend
+        '
+        Me.btnSend.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSend.Location = New System.Drawing.Point(12, 421)
+        Me.btnSend.Name = "btnSend"
+        Me.btnSend.Size = New System.Drawing.Size(67, 29)
+        Me.btnSend.TabIndex = 18
+        Me.btnSend.Text = "Send"
+        Me.btnSend.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(85, 423)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(64, 23)
+        Me.Label2.TabIndex = 19
+        Me.Label2.Text = "Total : "
+        '
+        'lblprice
+        '
+        Me.lblprice.AutoSize = True
+        Me.lblprice.BackColor = System.Drawing.Color.Transparent
+        Me.lblprice.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblprice.Location = New System.Drawing.Point(170, 423)
+        Me.lblprice.Name = "lblprice"
+        Me.lblprice.Size = New System.Drawing.Size(34, 23)
+        Me.lblprice.TabIndex = 20
+        Me.lblprice.Text = "0.0"
+        '
+        'btnfinish
+        '
+        Me.btnfinish.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnfinish.Location = New System.Drawing.Point(210, 421)
+        Me.btnfinish.Name = "btnfinish"
+        Me.btnfinish.Size = New System.Drawing.Size(67, 29)
+        Me.btnfinish.TabIndex = 21
+        Me.btnfinish.Text = "Finish"
+        Me.btnfinish.UseVisualStyleBackColor = True
         '
         'fListe_autumn
         '
@@ -128,7 +185,12 @@ Partial Class fListe_autumn
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(284, 462)
-        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.btnfinish)
+        Me.Controls.Add(Me.lblprice)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.btnSend)
+        Me.Controls.Add(Me.lstprice)
+        Me.Controls.Add(Me.lstArticle)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.pbxSearch)
         Me.Controls.Add(Me.btnReturn)
@@ -152,5 +214,10 @@ Partial Class fListe_autumn
     Friend WithEvents btnReturn As Button
     Friend WithEvents pbxSearch As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents lstArticle As ListBox
+    Friend WithEvents lstprice As ListBox
+    Friend WithEvents btnSend As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents lblprice As Label
+    Friend WithEvents btnfinish As Button
 End Class

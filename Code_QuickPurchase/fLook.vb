@@ -63,11 +63,92 @@
     End Sub
 
     Private Sub pbxFemale_Click(sender As Object, e As EventArgs) Handles pbxFemale.Click
+        fQuestionAdd.lblArticle.Text = "Lipstick"
         fQuestionAdd.Show()
         Dispose()
     End Sub
 
     Private Sub pbxMale_Click(sender As Object, e As EventArgs) Handles pbxMale.Click
+        fQuestionAdd.lblArticle.Text = "Shaver"
+        fQuestionAdd.Show()
+        Dispose()
+    End Sub
 
+    Private Sub pbxFemale1_Click(sender As Object, e As EventArgs) Handles pbxFemale1.Click
+        fQuestionAdd.lblArticle.Text = "Varnish"
+        fQuestionAdd.Show()
+        Dispose()
+    End Sub
+
+    Private Sub pbxOld_Click(sender As Object, e As EventArgs) Handles pbxOld.Click
+        fQuestionAdd.lblArticle.Text = "Denture"
+        fQuestionAdd.Show()
+        Dispose()
+    End Sub
+
+    Private Sub pbxMale2_Click(sender As Object, e As EventArgs) Handles pbxMale2.Click
+        fQuestionAdd.lblArticle.Text = "Bottle of Vine"
+        fQuestionAdd.Show()
+        Dispose()
+    End Sub
+
+    Private Sub pbxFemale2_Click(sender As Object, e As EventArgs) Handles pbxFemale2.Click
+        fQuestionAdd.lblArticle.Text = "Lipstick"
+        fQuestionAdd.Show()
+        Dispose()
+    End Sub
+
+    Private Sub pbxFemale3_Click(sender As Object, e As EventArgs) Handles pbxFemale3.Click
+        fQuestionAdd.lblArticle.Text = "Varnish"
+        fQuestionAdd.Show()
+        Dispose()
+    End Sub
+
+    Private Sub pbxmale3_Click(sender As Object, e As EventArgs) Handles pbxmale3.Click
+        fQuestionAdd.lblArticle.Text = "Shaver"
+        fQuestionAdd.Show()
+        Dispose()
+    End Sub
+
+    Private Sub pbxMale4_Click(sender As Object, e As EventArgs) Handles pbxMale4.Click
+        fQuestionAdd.lblArticle.Text = "Bottle of Vine"
+        fQuestionAdd.Show()
+        Dispose()
+    End Sub
+
+    Private Sub pbxbebe_Click(sender As Object, e As EventArgs) Handles pbxbebe.Click
+        fQuestionAdd.lblArticle.Text = "Diaper"
+        fQuestionAdd.Show()
+        Dispose()
+    End Sub
+
+    Private Sub pbxAdo1_Click(sender As Object, e As EventArgs) Handles pbxAdo1.Click
+        fQuestionAdd.lblArticle.Text = "Candy"
+        fQuestionAdd.Show()
+        Dispose()
+    End Sub
+
+    Private Sub pbxAdoM_Click(sender As Object, e As EventArgs) Handles pbxAdoM.Click
+        fQuestionAdd.lblArticle.Text = "Balloon"
+        fQuestionAdd.Show()
+        Dispose()
+    End Sub
+
+    Private Sub pbxAdoF_Click(sender As Object, e As EventArgs) Handles pbxAdoF.Click
+        fQuestionAdd.lblArticle.Text = "Doll"
+        fQuestionAdd.Show()
+        Dispose()
+    End Sub
+
+    Private Sub pbxAdo2_Click(sender As Object, e As EventArgs) Handles pbxAdo2.Click
+        fQuestionAdd.lblArticle.Text = "Hand Spinner"
+        fQuestionAdd.Show()
+        Dispose()
+    End Sub
+
+    Private Sub pbxOld1_Click(sender As Object, e As EventArgs) Handles pbxOld1.Click
+        fQuestionAdd.lblArticle.Text = "Denture"
+        fQuestionAdd.Show()
+        Dispose()
     End Sub
 End Class

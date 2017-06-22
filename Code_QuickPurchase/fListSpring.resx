@@ -121,7 +121,7 @@
   <data name="pbxSpring.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUIAAAHnCAYAAADNfFTBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsAAAA7AAWrWiQkAAP+lSURBVHhe7P1ndF3nlSWK+v/r0bfu6+rb/W7fqnLdTmW7
+        YQUAAAAJcEhZcwAADr8AAA6/ATgFUyQAAP+lSURBVHhe7P1ndF3nlSWK+v/r0bfu6+rb/W7fqnLdTmW7
         bMuyZMuyJFKBlERKzDmCIMCAnHPOOeeccyRAAAQIgmDOOeecMzJAcr65vnMOCFKUCEpg3hzjGwdEOGHv
         b88911pzzfWrX/3qVxi6MMx/t2/fxrNWW1sbRmp5e3tjJNbo0aMxEusf/uEf8Kz15LHV/v/4XnuTj8ez
         zr38fCT2mTyHqanpM1dMTAzexOXo6IhnreF8fhsbG/zU+uijjx7DuaF7729/+xt+9cH372NpqgkWJxrB
@@ -3880,7 +3880,7 @@
   <data name="pbxSearch.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADQAAAArCAYAAAA3+KulAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADr4AAA6+AepCscAAAATqSURBVGhD7ZhJKH1xFMfN8zzPc1mIhZSxKCRKVjYWMkth
+        YQUAAAAJcEhZcwAADr0AAA69AUf7kK0AAATqSURBVGhD7ZhJKH1xFMfN8zzPc1mIhZSxKCRKVjYWMkth
         oRQLUxEZVsiKEDYSoogQpShjxEbKPBUhmZ1/31v39a5333v3uY8/snir++495/M739+ZNN7e3ug3/TR+
         EwxY/oC+e0T/IvT6+krn5+c0MjJCRUVFFBYWRt7e3mRhYUF6enqkpaVFOjo6ZG5uTu7u7hQcHEzZ2dnU
         399P+/v79PLy8qlJSOUIbWxsUGFhIRkZGZGGhobgn7a2NoWEhFB3dzfd3d19GpRgoJOTE8rJySE4pgoI

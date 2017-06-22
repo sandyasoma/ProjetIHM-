@@ -17,6 +17,7 @@
         If (Date.Now.Month = 6 And Date.Now.Day >= 21 And Date.Now.Day <= 30) Then
             fSummer.Label1.Text = txtBoxNameList.Text
             fSummer.Show()
+
         End If
         If (Date.Now.Month = 7 Or Date.Now.Month = 8 And Date.Now.Day = 1 And Date.Now.Day = 31) Then
             fSummer.Label1.Text = txtBoxNameList.Text
@@ -52,6 +53,16 @@
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtBoxNameList.TextChanged
         If txtBoxNameList.Text = "" Then
             btnValidate.Enabled = False
+        End If
+    End Sub
+
+    Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
+        If (fQuestionAdd.lblArticle.Text <> "") Then
+            fQuestionAdd.Show()
+            Dispose()
+        Else
+            fMenu.Show()
+            Dispose()
         End If
     End Sub
 End Class
