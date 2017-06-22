@@ -36,9 +36,11 @@ Partial Class fListe_autumn
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblprice = New System.Windows.Forms.Label()
         Me.btnfinish = New System.Windows.Forms.Button()
+        Me.pbxPoubelle = New System.Windows.Forms.PictureBox()
         Me.pnlTitre.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxSearch, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbxPoubelle, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnlTitre
@@ -111,7 +113,7 @@ Partial Class fListe_autumn
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(107, 77)
+        Me.Label1.Location = New System.Drawing.Point(85, 77)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(69, 23)
         Me.Label1.TabIndex = 12
@@ -179,12 +181,23 @@ Partial Class fListe_autumn
         Me.btnfinish.Text = "Finish"
         Me.btnfinish.UseVisualStyleBackColor = True
         '
+        'pbxPoubelle
+        '
+        Me.pbxPoubelle.Image = CType(resources.GetObject("pbxPoubelle.Image"), System.Drawing.Image)
+        Me.pbxPoubelle.Location = New System.Drawing.Point(174, 75)
+        Me.pbxPoubelle.Name = "pbxPoubelle"
+        Me.pbxPoubelle.Size = New System.Drawing.Size(43, 51)
+        Me.pbxPoubelle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbxPoubelle.TabIndex = 28
+        Me.pbxPoubelle.TabStop = False
+        '
         'fListe_autumn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(284, 462)
+        Me.Controls.Add(Me.pbxPoubelle)
         Me.Controls.Add(Me.btnfinish)
         Me.Controls.Add(Me.lblprice)
         Me.Controls.Add(Me.Label2)
@@ -202,6 +215,7 @@ Partial Class fListe_autumn
         Me.pnlTitre.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbxSearch, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbxPoubelle, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -220,4 +234,5 @@ Partial Class fListe_autumn
     Friend WithEvents Label2 As Label
     Friend WithEvents lblprice As Label
     Friend WithEvents btnfinish As Button
+    Friend WithEvents pbxPoubelle As PictureBox
 End Class

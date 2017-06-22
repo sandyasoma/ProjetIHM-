@@ -8,6 +8,7 @@
     End Sub
 
     Private Sub btnPay_Click(sender As Object, e As EventArgs) Handles btnPay.Click
-
+        MsgBox("Oooh Poor Wallet :(")
+        Dispose()
     End Sub
 End Class

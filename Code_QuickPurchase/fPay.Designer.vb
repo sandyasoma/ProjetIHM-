@@ -28,6 +28,7 @@ Partial Class fPay
         Me.btnReturn = New System.Windows.Forms.Button()
         Me.lblprice = New System.Windows.Forms.Label()
         Me.btnPay = New System.Windows.Forms.Button()
+        Me.lblValTot = New System.Windows.Forms.Label()
         Me.pnlTitre.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -79,7 +80,7 @@ Partial Class fPay
         '
         Me.lblprice.AutoSize = True
         Me.lblprice.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblprice.Location = New System.Drawing.Point(186, 219)
+        Me.lblprice.Location = New System.Drawing.Point(124, 219)
         Me.lblprice.Name = "lblprice"
         Me.lblprice.Size = New System.Drawing.Size(68, 18)
         Me.lblprice.TabIndex = 9
@@ -95,12 +96,22 @@ Partial Class fPay
         Me.btnPay.Text = "Validate And Pay"
         Me.btnPay.UseVisualStyleBackColor = True
         '
+        'lblValTot
+        '
+        Me.lblValTot.AutoSize = True
+        Me.lblValTot.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblValTot.Location = New System.Drawing.Point(198, 219)
+        Me.lblValTot.Name = "lblValTot"
+        Me.lblValTot.Size = New System.Drawing.Size(0, 18)
+        Me.lblValTot.TabIndex = 21
+        '
         'fPay
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(284, 462)
+        Me.Controls.Add(Me.lblValTot)
         Me.Controls.Add(Me.btnPay)
         Me.Controls.Add(Me.lblprice)
         Me.Controls.Add(Me.btnReturn)
@@ -120,4 +131,5 @@ Partial Class fPay
     Friend WithEvents btnReturn As Button
     Friend WithEvents lblprice As Label
     Friend WithEvents btnPay As Button
+    Friend WithEvents lblValTot As Label
 End Class

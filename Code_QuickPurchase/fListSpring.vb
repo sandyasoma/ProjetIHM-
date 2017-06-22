@@ -19,6 +19,27 @@
     End Sub
 
     Private Sub btnSend_Click(sender As Object, e As EventArgs) Handles btnSend.Click
+        MsgBox("Your List is send !")
+    End Sub
 
+    Private Sub pbxPoubelle_Click(sender As Object, e As EventArgs) Handles pbxPoubelle.Click
+        'pour supprimer un article avec son prix
+        If (lstArticle.SelectedItem <> "" And lstprice.SelectedItem <> "") Then
+            lstprice.Items.RemoveAt(lstArticle.SelectedIndex)
+            lstArticle.Items.Remove(lstArticle.SelectedItem)
+        End If
+    End Sub
+
+    Private Sub btnfinish_Click(sender As Object, e As EventArgs) Handles btnfinish.Click
+        If (lblprice.Text <> "0.0") Then
+            fPay.lblValTot.Text = lblprice.Text
+            fPay.Show()
+            Dispose()
+        Else
+            MsgBox("Empty List !")
+        End If
+        fPay.lblValTot.Text = lblprice.Text
+        fPay.Show()
+        Dispose()
     End Sub
 End Class
