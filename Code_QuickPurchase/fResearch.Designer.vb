@@ -37,6 +37,8 @@ Partial Class fResearch
         Me.txtquan = New System.Windows.Forms.TextBox()
         Me.lblquantity = New System.Windows.Forms.Label()
         Me.lstprice = New System.Windows.Forms.ListBox()
+        Me.lblArtticle = New System.Windows.Forms.Label()
+        Me.lblPrice = New System.Windows.Forms.Label()
         Me.pnlTitre1.SuspendLayout()
         CType(Me.pbxSearch2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxBread, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -194,12 +196,34 @@ Partial Class fResearch
         Me.lstprice.TabIndex = 37
         Me.lstprice.Visible = False
         '
+        'lblArtticle
+        '
+        Me.lblArtticle.AutoSize = True
+        Me.lblArtticle.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblArtticle.Location = New System.Drawing.Point(45, 174)
+        Me.lblArtticle.Name = "lblArtticle"
+        Me.lblArtticle.Size = New System.Drawing.Size(63, 23)
+        Me.lblArtticle.TabIndex = 38
+        Me.lblArtticle.Text = "Article"
+        '
+        'lblPrice
+        '
+        Me.lblPrice.AutoSize = True
+        Me.lblPrice.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrice.Location = New System.Drawing.Point(154, 174)
+        Me.lblPrice.Name = "lblPrice"
+        Me.lblPrice.Size = New System.Drawing.Size(48, 23)
+        Me.lblPrice.TabIndex = 39
+        Me.lblPrice.Text = "price"
+        '
         'fResearch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(284, 462)
+        Me.Controls.Add(Me.lblPrice)
+        Me.Controls.Add(Me.lblArtticle)
         Me.Controls.Add(Me.lstprice)
         Me.Controls.Add(Me.lblquantity)
         Me.Controls.Add(Me.txtquan)
@@ -239,4 +263,6 @@ Partial Class fResearch
     Friend WithEvents txtquan As TextBox
     Friend WithEvents lblquantity As Label
     Friend WithEvents lstprice As ListBox
+    Friend WithEvents lblArtticle As Label
+    Friend WithEvents lblPrice As Label
 End Class

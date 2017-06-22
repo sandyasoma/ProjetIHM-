@@ -5,6 +5,11 @@
     End Sub
 
     Private Sub txtSearch_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
+        If (txtSearch.Text <> "") Then
+            If (e.KeyCode = Keys.Enter) Then
+                'Action que tu souhaites effectuer.
+            End If
+        End If
         If (txtSearch.Text = "bread") Then
             pbxBraided.Visible = True
             pbxBread.Visible = True
@@ -32,10 +37,25 @@
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+
         fSummer.lstArticle.Items.Add(lstBread.SelectedItem)
         If (lstBread.SelectedItem = "Bread") Then
-            fSummer.calculerPrice(0.5 * Convert.ToDouble(txtquan.Text))
-
+            Dim prixBread As Double = 0
+            prixBread = (0.5 * Convert.ToDouble(txtquan.Text))
+            fSummer.calculerPrice(prixBread)
+            fSummer.lstprice.Items.Add(prixBread.ToString)
+        End If
+        If (lstBread.SelectedItem = "Soft bread") Then
+            Dim prixSoftBread As Double = 0
+            prixSoftBread = (0.5 * Convert.ToDouble(txtquan.Text))
+            fSummer.calculerPrice(prixSoftBread)
+            fSummer.lstprice.Items.Add(prixSoftBread.ToString)
+        End If
+        If (lstBread.SelectedItem = "Braided bread") Then
+            Dim prixBraidedBread As Double = 0
+            prixBraidedBread = (0.5 * Convert.ToDouble(txtquan.Text))
+            fSummer.calculerPrice(prixBraidedBread)
+            fSummer.lstprice.Items.Add(prixBraidedBread.ToString)
         End If
         fSummer.Show()
 
