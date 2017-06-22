@@ -34,7 +34,6 @@ Partial Class fSign
         Me.lblPswd = New System.Windows.Forms.Label()
         Me.txtLast = New System.Windows.Forms.TextBox()
         Me.txtFirst = New System.Windows.Forms.TextBox()
-        Me.dteNaiss = New System.Windows.Forms.DateTimePicker()
         Me.txtAd = New System.Windows.Forms.TextBox()
         Me.txtMail = New System.Windows.Forms.TextBox()
         Me.txtUser = New System.Windows.Forms.TextBox()
@@ -42,6 +41,7 @@ Partial Class fSign
         Me.btnSign = New System.Windows.Forms.Button()
         Me.btnReturn = New System.Windows.Forms.Button()
         Me.cbxGender = New System.Windows.Forms.ComboBox()
+        Me.txtAge = New System.Windows.Forms.TextBox()
         Me.pnlTitre1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -100,11 +100,11 @@ Partial Class fSign
         '
         Me.lblDate.AutoSize = True
         Me.lblDate.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDate.Location = New System.Drawing.Point(3, 218)
+        Me.lblDate.Location = New System.Drawing.Point(69, 215)
         Me.lblDate.Name = "lblDate"
-        Me.lblDate.Size = New System.Drawing.Size(102, 20)
+        Me.lblDate.Size = New System.Drawing.Size(36, 20)
         Me.lblDate.TabIndex = 4
-        Me.lblDate.Text = "Date of birth"
+        Me.lblDate.Text = "Age"
         '
         'lblAd
         '
@@ -159,14 +159,6 @@ Partial Class fSign
         Me.txtFirst.Name = "txtFirst"
         Me.txtFirst.Size = New System.Drawing.Size(141, 20)
         Me.txtFirst.TabIndex = 11
-        '
-        'dteNaiss
-        '
-        Me.dteNaiss.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dteNaiss.Location = New System.Drawing.Point(131, 215)
-        Me.dteNaiss.Name = "dteNaiss"
-        Me.dteNaiss.Size = New System.Drawing.Size(141, 23)
-        Me.dteNaiss.TabIndex = 12
         '
         'txtAd
         '
@@ -224,12 +216,20 @@ Partial Class fSign
         Me.cbxGender.Size = New System.Drawing.Size(46, 21)
         Me.cbxGender.TabIndex = 19
         '
+        'txtAge
+        '
+        Me.txtAge.Location = New System.Drawing.Point(131, 217)
+        Me.txtAge.Name = "txtAge"
+        Me.txtAge.Size = New System.Drawing.Size(46, 20)
+        Me.txtAge.TabIndex = 20
+        '
         'fSign
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(284, 462)
+        Me.Controls.Add(Me.txtAge)
         Me.Controls.Add(Me.cbxGender)
         Me.Controls.Add(Me.btnReturn)
         Me.Controls.Add(Me.btnSign)
@@ -237,7 +237,6 @@ Partial Class fSign
         Me.Controls.Add(Me.txtUser)
         Me.Controls.Add(Me.txtMail)
         Me.Controls.Add(Me.txtAd)
-        Me.Controls.Add(Me.dteNaiss)
         Me.Controls.Add(Me.txtFirst)
         Me.Controls.Add(Me.txtLast)
         Me.Controls.Add(Me.lblPswd)
@@ -270,7 +269,6 @@ Partial Class fSign
     Friend WithEvents lblPswd As Label
     Friend WithEvents txtLast As TextBox
     Friend WithEvents txtFirst As TextBox
-    Friend WithEvents dteNaiss As DateTimePicker
     Friend WithEvents txtAd As TextBox
     Friend WithEvents txtMail As TextBox
     Friend WithEvents txtUser As TextBox
@@ -278,4 +276,5 @@ Partial Class fSign
     Friend WithEvents btnSign As Button
     Friend WithEvents btnReturn As Button
     Friend WithEvents cbxGender As ComboBox
+    Friend WithEvents txtAge As TextBox
 End Class

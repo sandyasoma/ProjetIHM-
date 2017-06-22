@@ -1,7 +1,7 @@
 ﻿Public Class fSign
     Enum Gender
-        Mr
-        Ms
+        Male
+        Female
     End Enum
     Private Sub fSign_Initialize()
 
@@ -11,7 +11,7 @@
         My.Settings.Save()
         My.Settings.FirstName = txtFirst.Text
         My.Settings.Save()
-        My.Settings.DateofBirth = dteNaiss.Text
+        My.Settings.Age = (Convert.ToInt16(txtAge.Text))
         My.Settings.Save()
         My.Settings.Address = txtAd.Text
         My.Settings.Save()
@@ -25,7 +25,7 @@
         Dispose() 'on ferme la fenêtre courante'
     End Sub
 
-    Private Sub dteNaiss_ValueChanged(sender As Object, e As EventArgs) Handles dteNaiss.ValueChanged
+    Private Sub dteNaiss_ValueChanged(sender As Object, e As EventArgs) 
 
     End Sub
 
@@ -48,5 +48,9 @@
         For Each gen In gender
             cbxGender.Items.Add(gen)
         Next
+    End Sub
+
+    Private Sub txtAge_TextChanged(sender As Object, e As EventArgs) Handles txtAge.TextChanged
+
     End Sub
 End Class

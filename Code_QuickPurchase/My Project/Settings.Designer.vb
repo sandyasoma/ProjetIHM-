@@ -56,7 +56,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("root")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("admin")>  _
         Public Property Username() As String
             Get
                 Return CType(Me("Username"),String)
@@ -68,7 +68,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("root")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("admin")>  _
         Public Property Password() As String
             Get
                 Return CType(Me("Password"),String)
@@ -80,7 +80,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("ADMIN")>  _
         Public Property LastName() As String
             Get
                 Return CType(Me("LastName"),String)
@@ -92,7 +92,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Admin")>  _
         Public Property FirstName() As String
             Get
                 Return CType(Me("FirstName"),String)
@@ -103,19 +103,20 @@ Namespace My
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Property DateofBirth() As Date
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("30")>  _
+        Public Property Age() As Integer
             Get
-                Return CType(Me("DateofBirth"),Date)
+                Return CType(Me("Age"),Integer)
             End Get
             Set
-                Me("DateofBirth") = value
+                Me("Age") = value
             End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("11, Avenue du Rocher")>  _
         Public Property Address() As String
             Get
                 Return CType(Me("Address"),String)
@@ -127,13 +128,121 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("admin@hotmail.fr")>  _
         Public Property Mail() As String
             Get
                 Return CType(Me("Mail"),String)
             End Get
             Set
                 Me("Mail") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Mrs")>  _
+        Public Property Gender() As String
+            Get
+                Return CType(Me("Gender"),String)
+            End Get
+            Set
+                Me("Gender") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Mr")>  _
+        Public Property mb1Gen() As String
+            Get
+                Return CType(Me("mb1Gen"),String)
+            End Get
+            Set
+                Me("mb1Gen") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Mrs")>  _
+        Public Property mb2Gen() As String
+            Get
+                Return CType(Me("mb2Gen"),String)
+            End Get
+            Set
+                Me("mb2Gen") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Mr")>  _
+        Public Property mb3Gen() As String
+            Get
+                Return CType(Me("mb3Gen"),String)
+            End Get
+            Set
+                Me("mb3Gen") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("35")>  _
+        Public Property mb1Age() As Integer
+            Get
+                Return CType(Me("mb1Age"),Integer)
+            End Get
+            Set
+                Me("mb1Age") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("7")>  _
+        Public Property mb2Age() As Integer
+            Get
+                Return CType(Me("mb2Age"),Integer)
+            End Get
+            Set
+                Me("mb2Age") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("3")>  _
+        Public Property mb3Age() As Integer
+            Get
+                Return CType(Me("mb3Age"),Integer)
+            End Get
+            Set
+                Me("mb3Age") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Mrs")>  _
+        Public Property mb4Gen() As String
+            Get
+                Return CType(Me("mb4Gen"),String)
+            End Get
+            Set
+                Me("mb4Gen") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("70")>  _
+        Public Property mb4Age() As Integer
+            Get
+                Return CType(Me("mb4Age"),Integer)
+            End Get
+            Set
+                Me("mb4Age") = value
             End Set
         End Property
     End Class
