@@ -41,11 +41,6 @@
 
     End Sub
 
-    Private Sub fResearch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-
-    End Sub
-
     Private Sub lstBread_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstBread.SelectedIndexChanged
         If (lstBread.SelectedItem = "") Then
             btnAdd.Enabled = False
