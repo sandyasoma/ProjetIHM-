@@ -4,12 +4,23 @@
 
     End Sub
 
-    Private Sub txtSearch_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
-        If (txtSearch.Text <> "") Then
-            If (e.KeyCode = Keys.Enter) Then
-                'Action que tu souhaites effectuer.
-            End If
+    'Appuyer sur la touche entrer pour valider
+    Private Sub txtSearch_Validated(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtSearch.Validated
+        EventValidatedSub()
+    End Sub
+
+    Private Sub txtSearch_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtSearch.KeyPress
+        If (e.KeyChar = ChrW(13)) Then
+            EventValidatedSub()
         End If
+    End Sub
+
+    Private Sub EventValidatedSub()
+        'Ta condition
+    End Sub
+
+    Private Sub txtSearch_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
+
         If (txtSearch.Text = "bread") Then
             pbxBraided.Visible = True
             pbxBread.Visible = True
