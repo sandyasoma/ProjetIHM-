@@ -7,22 +7,28 @@
 
     End Sub
     Private Sub btnSign_Click(sender As Object, e As EventArgs) Handles btnSign.Click
-        My.Settings.LastName = txtLast.Text
-        My.Settings.Save()
-        My.Settings.FirstName = txtFirst.Text
-        My.Settings.Save()
-        My.Settings.Age = (Convert.ToInt16(txtAge.Text))
-        My.Settings.Save()
-        My.Settings.Address = txtAd.Text
-        My.Settings.Save()
-        My.Settings.Mail = txtMail.Text
-        My.Settings.Save()
-        My.Settings.Username = txtUser.Text
-        My.Settings.Save()
-        My.Settings.Password = txtPswd.Text
-        My.Settings.Save()
-        fMembers.Show() 'affiche la fenêtre Membres'
-        Dispose() 'on ferme la fenêtre courante'
+        If (txtAge.Text = "") Then
+            MsgBox("Please, enter fields with a * !", MsgBoxStyle.Critical, "Warning !")
+        Else
+            My.Settings.LastName = txtLast.Text
+
+            My.Settings.FirstName = txtFirst.Text
+            My.Settings.Age = (Convert.ToInt16(txtAge.Text))
+            My.Settings.Address = txtAd.Text
+
+            My.Settings.Mail = txtMail.Text
+
+            My.Settings.Username = txtUser.Text
+
+            My.Settings.Password = txtPswd.Text
+            If (My.Settings.Age < 18) Then
+                MsgBox("You are MINOR !", MsgBoxStyle.Critical, "Warning !")
+            Else
+                fMembers.Show() 'affiche la fenêtre Membres'
+                Dispose() 'on ferme la fenêtre courante'
+            End If
+        End If
+
     End Sub
 
     Private Sub dteNaiss_ValueChanged(sender As Object, e As EventArgs) 
@@ -38,7 +44,7 @@
 
     End Sub
 
-    Private Sub cmbGender_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub cmbGender_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
 

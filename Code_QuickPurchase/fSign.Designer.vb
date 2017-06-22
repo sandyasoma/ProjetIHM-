@@ -72,9 +72,9 @@ Partial Class fSign
         Me.lblGender.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGender.Location = New System.Drawing.Point(46, 107)
         Me.lblGender.Name = "lblGender"
-        Me.lblGender.Size = New System.Drawing.Size(59, 20)
+        Me.lblGender.Size = New System.Drawing.Size(67, 20)
         Me.lblGender.TabIndex = 1
-        Me.lblGender.Text = "Gender"
+        Me.lblGender.Text = "Gender*"
         '
         'lblLast
         '
@@ -102,9 +102,9 @@ Partial Class fSign
         Me.lblDate.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDate.Location = New System.Drawing.Point(69, 215)
         Me.lblDate.Name = "lblDate"
-        Me.lblDate.Size = New System.Drawing.Size(36, 20)
+        Me.lblDate.Size = New System.Drawing.Size(44, 20)
         Me.lblDate.TabIndex = 4
-        Me.lblDate.Text = "Age"
+        Me.lblDate.Text = "Age*"
         '
         'lblAd
         '
@@ -132,9 +132,9 @@ Partial Class fSign
         Me.lblUser.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblUser.Location = New System.Drawing.Point(28, 334)
         Me.lblUser.Name = "lblUser"
-        Me.lblUser.Size = New System.Drawing.Size(77, 20)
+        Me.lblUser.Size = New System.Drawing.Size(85, 20)
         Me.lblUser.TabIndex = 7
-        Me.lblUser.Text = "Username"
+        Me.lblUser.Text = "Username*"
         '
         'lblPswd
         '
@@ -142,9 +142,9 @@ Partial Class fSign
         Me.lblPswd.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPswd.Location = New System.Drawing.Point(31, 373)
         Me.lblPswd.Name = "lblPswd"
-        Me.lblPswd.Size = New System.Drawing.Size(74, 20)
+        Me.lblPswd.Size = New System.Drawing.Size(82, 20)
         Me.lblPswd.TabIndex = 8
-        Me.lblPswd.Text = "Password"
+        Me.lblPswd.Text = "Password*"
         '
         'txtLast
         '

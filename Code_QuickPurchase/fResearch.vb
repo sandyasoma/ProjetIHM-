@@ -1,4 +1,5 @@
 ﻿Public Class fResearch
+
     Private Sub lblTitre2_Click(sender As Object, e As EventArgs) Handles lblTitre2.Click
 
     End Sub
@@ -8,12 +9,10 @@
             pbxBraided.Visible = True
             pbxBread.Visible = True
             pbxSoft.Visible = True
-            cbBraided.Visible = True
-            cbBread.Visible = True
-            cbSoft.Visible = True
-            cmbQuantity1.Visible = True
-            cmbQuantity2.Visible = True
-            cmbQuantity3.Visible = True
+
+            lstBread.Visible = True
+            lblquantity.Visible = True
+            txtquan.Visible = True
             btnAdd.Visible = True
 
         End If
@@ -24,15 +23,34 @@
         Dispose()
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles cbBread.CheckedChanged
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged_1(sender As Object, e As EventArgs) Handles cbSoft.CheckedChanged
+    Private Sub CheckBox1_CheckedChanged_1(sender As Object, e As EventArgs)
 
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        fSummer.lstArticle.Items.Add(lstBread.SelectedItem)
+        If (lstBread.SelectedItem = "Bread") Then
+            fSummer.calculerPrice(0.5)
 
+        End If
+        fSummer.Show()
+
+    End Sub
+
+    Private Sub fResearch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
+    End Sub
+
+    Private Sub lstBread_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstBread.SelectedIndexChanged
+        If (lstBread.SelectedItem = "") Then
+            btnAdd.Enabled = False
+        Else
+            btnAdd.Enabled = True
+        End If
     End Sub
 End Class

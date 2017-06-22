@@ -23,6 +23,6 @@
     End Sub
 
     Private Sub fQuickpurchase_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        My.Settings.Reset()
     End Sub
 End Class

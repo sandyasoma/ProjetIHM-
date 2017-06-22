@@ -54,3 +54,5 @@ C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\
 C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.Resources.resources
 C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.fView.resources
 C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.vbproj.GenerateResource.Cache
+C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.fLook.resources
+C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.fQuestionAdd.resources

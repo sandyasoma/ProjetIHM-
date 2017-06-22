@@ -23,6 +23,7 @@
     End Sub
 
     Private Sub btnLook_Click(sender As Object, e As EventArgs) Handles btnLook.Click
-
+        fLook.Show()
+        Dispose()
     End Sub
 End Class

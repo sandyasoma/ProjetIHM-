@@ -96,6 +96,12 @@
     <Compile Include="fLog.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="fLook.Designer.vb">
+      <DependentUpon>fLook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fLook.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="fMembers.Designer.vb">
       <DependentUpon>fMembers.vb</DependentUpon>
     </Compile>
@@ -112,6 +118,12 @@
       <DependentUpon>fPay.vb</DependentUpon>
     </Compile>
     <Compile Include="fPay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuestionAdd.Designer.vb">
+      <DependentUpon>fQuestionAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fQuestionAdd.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fQuickPurchase.vb">
@@ -198,6 +210,9 @@
     <EmbeddedResource Include="fLog.resx">
       <DependentUpon>fLog.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fLook.resx">
+      <DependentUpon>fLook.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fMembers.resx">
       <DependentUpon>fMembers.vb</DependentUpon>
     </EmbeddedResource>
@@ -206,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fPay.resx">
       <DependentUpon>fPay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fQuestionAdd.resx">
+      <DependentUpon>fQuestionAdd.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fQuickPurchase.resx">
       <DependentUpon>fQuickPurchase.vb</DependentUpon>

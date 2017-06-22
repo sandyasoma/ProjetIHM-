@@ -32,13 +32,11 @@ Partial Class fResearch
         Me.pbxBread = New System.Windows.Forms.PictureBox()
         Me.pbxSoft = New System.Windows.Forms.PictureBox()
         Me.pbxBraided = New System.Windows.Forms.PictureBox()
-        Me.cbBread = New System.Windows.Forms.CheckBox()
-        Me.cmbQuantity1 = New System.Windows.Forms.ComboBox()
-        Me.cbSoft = New System.Windows.Forms.CheckBox()
-        Me.cbBraided = New System.Windows.Forms.CheckBox()
-        Me.cmbQuantity2 = New System.Windows.Forms.ComboBox()
-        Me.cmbQuantity3 = New System.Windows.Forms.ComboBox()
         Me.btnAdd = New System.Windows.Forms.Button()
+        Me.lstBread = New System.Windows.Forms.ListBox()
+        Me.txtquan = New System.Windows.Forms.TextBox()
+        Me.lblquantity = New System.Windows.Forms.Label()
+        Me.lstprice = New System.Windows.Forms.ListBox()
         Me.pnlTitre1.SuspendLayout()
         CType(Me.pbxSearch2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxBread, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -142,75 +140,6 @@ Partial Class fResearch
         Me.pbxBraided.TabStop = False
         Me.pbxBraided.Visible = False
         '
-        'cbBread
-        '
-        Me.cbBread.AutoSize = True
-        Me.cbBread.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbBread.Location = New System.Drawing.Point(98, 156)
-        Me.cbBread.Name = "cbBread"
-        Me.cbBread.Size = New System.Drawing.Size(72, 27)
-        Me.cbBread.TabIndex = 27
-        Me.cbBread.Text = "Bread"
-        Me.cbBread.UseVisualStyleBackColor = True
-        Me.cbBread.Visible = False
-        '
-        'cmbQuantity1
-        '
-        Me.cmbQuantity1.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbQuantity1.FormattingEnabled = True
-        Me.cmbQuantity1.Location = New System.Drawing.Point(223, 154)
-        Me.cmbQuantity1.Name = "cmbQuantity1"
-        Me.cmbQuantity1.Size = New System.Drawing.Size(36, 31)
-        Me.cmbQuantity1.TabIndex = 28
-        Me.cmbQuantity1.Text = "0"
-        Me.cmbQuantity1.Visible = False
-        '
-        'cbSoft
-        '
-        Me.cbSoft.AutoSize = True
-        Me.cbSoft.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbSoft.Location = New System.Drawing.Point(98, 217)
-        Me.cbSoft.Name = "cbSoft"
-        Me.cbSoft.Size = New System.Drawing.Size(111, 27)
-        Me.cbSoft.TabIndex = 29
-        Me.cbSoft.Text = "Soft bread"
-        Me.cbSoft.UseVisualStyleBackColor = True
-        Me.cbSoft.Visible = False
-        '
-        'cbBraided
-        '
-        Me.cbBraided.AutoSize = True
-        Me.cbBraided.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbBraided.Location = New System.Drawing.Point(97, 279)
-        Me.cbBraided.Name = "cbBraided"
-        Me.cbBraided.Size = New System.Drawing.Size(134, 27)
-        Me.cbBraided.TabIndex = 30
-        Me.cbBraided.Text = "Braided bread"
-        Me.cbBraided.UseVisualStyleBackColor = True
-        Me.cbBraided.Visible = False
-        '
-        'cmbQuantity2
-        '
-        Me.cmbQuantity2.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbQuantity2.FormattingEnabled = True
-        Me.cmbQuantity2.Location = New System.Drawing.Point(223, 217)
-        Me.cmbQuantity2.Name = "cmbQuantity2"
-        Me.cmbQuantity2.Size = New System.Drawing.Size(36, 31)
-        Me.cmbQuantity2.TabIndex = 31
-        Me.cmbQuantity2.Text = "0"
-        Me.cmbQuantity2.Visible = False
-        '
-        'cmbQuantity3
-        '
-        Me.cmbQuantity3.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbQuantity3.FormattingEnabled = True
-        Me.cmbQuantity3.Location = New System.Drawing.Point(237, 279)
-        Me.cmbQuantity3.Name = "cmbQuantity3"
-        Me.cmbQuantity3.Size = New System.Drawing.Size(36, 31)
-        Me.cmbQuantity3.TabIndex = 32
-        Me.cmbQuantity3.Text = "0"
-        Me.cmbQuantity3.Visible = False
-        '
         'btnAdd
         '
         Me.btnAdd.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -222,19 +151,60 @@ Partial Class fResearch
         Me.btnAdd.UseVisualStyleBackColor = True
         Me.btnAdd.Visible = False
         '
+        'lstBread
+        '
+        Me.lstBread.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstBread.FormattingEnabled = True
+        Me.lstBread.ItemHeight = 23
+        Me.lstBread.Items.AddRange(New Object() {"Bread", "", "", "Soft bread", "", "", "Braided bread"})
+        Me.lstBread.Location = New System.Drawing.Point(94, 136)
+        Me.lstBread.Name = "lstBread"
+        Me.lstBread.Size = New System.Drawing.Size(123, 188)
+        Me.lstBread.TabIndex = 34
+        Me.lstBread.Visible = False
+        '
+        'txtquan
+        '
+        Me.txtquan.Location = New System.Drawing.Point(191, 351)
+        Me.txtquan.Name = "txtquan"
+        Me.txtquan.Size = New System.Drawing.Size(57, 20)
+        Me.txtquan.TabIndex = 35
+        Me.txtquan.Visible = False
+        '
+        'lblquantity
+        '
+        Me.lblquantity.AutoSize = True
+        Me.lblquantity.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblquantity.Location = New System.Drawing.Point(94, 347)
+        Me.lblquantity.Name = "lblquantity"
+        Me.lblquantity.Size = New System.Drawing.Size(91, 23)
+        Me.lblquantity.TabIndex = 36
+        Me.lblquantity.Text = " Quantity :"
+        Me.lblquantity.Visible = False
+        '
+        'lstprice
+        '
+        Me.lstprice.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstprice.FormattingEnabled = True
+        Me.lstprice.ItemHeight = 23
+        Me.lstprice.Items.AddRange(New Object() {"0.5", "", "", "1", "", "", "2"})
+        Me.lstprice.Location = New System.Drawing.Point(223, 136)
+        Me.lstprice.Name = "lstprice"
+        Me.lstprice.Size = New System.Drawing.Size(49, 188)
+        Me.lstprice.TabIndex = 37
+        Me.lstprice.Visible = False
+        '
         'fResearch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(284, 462)
+        Me.Controls.Add(Me.lstprice)
+        Me.Controls.Add(Me.lblquantity)
+        Me.Controls.Add(Me.txtquan)
+        Me.Controls.Add(Me.lstBread)
         Me.Controls.Add(Me.btnAdd)
-        Me.Controls.Add(Me.cmbQuantity3)
-        Me.Controls.Add(Me.cmbQuantity2)
-        Me.Controls.Add(Me.cbBraided)
-        Me.Controls.Add(Me.cbSoft)
-        Me.Controls.Add(Me.cmbQuantity1)
-        Me.Controls.Add(Me.cbBread)
         Me.Controls.Add(Me.pbxBraided)
         Me.Controls.Add(Me.pbxSoft)
         Me.Controls.Add(Me.pbxBread)
@@ -264,11 +234,9 @@ Partial Class fResearch
     Friend WithEvents pbxBread As PictureBox
     Friend WithEvents pbxSoft As PictureBox
     Friend WithEvents pbxBraided As PictureBox
-    Friend WithEvents cbBread As CheckBox
-    Friend WithEvents cmbQuantity1 As ComboBox
-    Friend WithEvents cbSoft As CheckBox
-    Friend WithEvents cbBraided As CheckBox
-    Friend WithEvents cmbQuantity2 As ComboBox
-    Friend WithEvents cmbQuantity3 As ComboBox
     Friend WithEvents btnAdd As Button
+    Friend WithEvents lstBread As ListBox
+    Friend WithEvents txtquan As TextBox
+    Friend WithEvents lblquantity As Label
+    Friend WithEvents lstprice As ListBox
 End Class

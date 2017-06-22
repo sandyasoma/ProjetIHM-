@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="Username" Type="System.String" Scope="User">
-      <Value Profile="(Default)">admin</Value>
+      <Value Profile="(Default)">Admin</Value>
     </Setting>
     <Setting Name="Password" Type="System.String" Scope="User">
       <Value Profile="(Default)">admin</Value>
@@ -15,7 +15,7 @@
       <Value Profile="(Default)">Admin</Value>
     </Setting>
     <Setting Name="Age" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">30</Value>
+      <Value Profile="(Default)">70</Value>
     </Setting>
     <Setting Name="Address" Type="System.String" Scope="User">
       <Value Profile="(Default)">11, Avenue du Rocher</Value>
@@ -24,16 +24,16 @@
       <Value Profile="(Default)">admin@hotmail.fr</Value>
     </Setting>
     <Setting Name="Gender" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Mrs</Value>
+      <Value Profile="(Default)">Male</Value>
     </Setting>
     <Setting Name="mb1Gen" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Mr</Value>
+      <Value Profile="(Default)">Male</Value>
     </Setting>
     <Setting Name="mb2Gen" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Mrs</Value>
+      <Value Profile="(Default)">Female</Value>
     </Setting>
     <Setting Name="mb3Gen" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Mr</Value>
+      <Value Profile="(Default)">Male</Value>
     </Setting>
     <Setting Name="mb1Age" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">35</Value>
@@ -45,10 +45,16 @@
       <Value Profile="(Default)">3</Value>
     </Setting>
     <Setting Name="mb4Gen" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Mrs</Value>
+      <Value Profile="(Default)">Female</Value>
     </Setting>
     <Setting Name="mb4Age" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">70</Value>
+    </Setting>
+    <Setting Name="mb5Gen" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Male</Value>
+    </Setting>
+    <Setting Name="mb5Age" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
     </Setting>
   </Settings>
 </SettingsFile>

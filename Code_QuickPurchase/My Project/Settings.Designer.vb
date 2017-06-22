@@ -56,7 +56,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("admin")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Admin")>  _
         Public Property Username() As String
             Get
                 Return CType(Me("Username"),String)
@@ -104,7 +104,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("30")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("70")>  _
         Public Property Age() As Integer
             Get
                 Return CType(Me("Age"),Integer)
@@ -140,7 +140,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Mrs")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Male")>  _
         Public Property Gender() As String
             Get
                 Return CType(Me("Gender"),String)
@@ -152,7 +152,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Mr")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Male")>  _
         Public Property mb1Gen() As String
             Get
                 Return CType(Me("mb1Gen"),String)
@@ -164,7 +164,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Mrs")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Female")>  _
         Public Property mb2Gen() As String
             Get
                 Return CType(Me("mb2Gen"),String)
@@ -176,7 +176,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Mr")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Male")>  _
         Public Property mb3Gen() As String
             Get
                 Return CType(Me("mb3Gen"),String)
@@ -224,7 +224,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Mrs")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Female")>  _
         Public Property mb4Gen() As String
             Get
                 Return CType(Me("mb4Gen"),String)
@@ -243,6 +243,30 @@ Namespace My
             End Get
             Set
                 Me("mb4Age") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Male")>  _
+        Public Property mb5Gen() As String
+            Get
+                Return CType(Me("mb5Gen"),String)
+            End Get
+            Set
+                Me("mb5Gen") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("10")>  _
+        Public Property mb5Age() As Integer
+            Get
+                Return CType(Me("mb5Age"),Integer)
+            End Get
+            Set
+                Me("mb5Age") = value
             End Set
         End Property
     End Class

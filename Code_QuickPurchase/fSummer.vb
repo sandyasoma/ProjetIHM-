@@ -1,4 +1,10 @@
 ﻿Public Class fSummer
+    Dim priceTot As Integer = 0
+
+    Public Sub calculerPrice(price As Integer)
+        priceTot += price
+        lblprice.Text = priceTot.ToString
+    End Sub
     Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
         fMenu.Show()
         Dispose()

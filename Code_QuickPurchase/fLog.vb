@@ -12,11 +12,11 @@
     End Sub
 
     Private Sub btnLog_Click(sender As Object, e As EventArgs) Handles btnLog.Click
-        If (txtUser.Text <> My.Settings.Username And txtPswd.Text <> My.Settings.Password) Then
-            MsgBox("Invalid Username or Password", MsgBoxStyle.Critical, "Warning !")
-        Else
+        If (txtUser.Text = My.Settings.Username And txtPswd.Text = My.Settings.Password) Then
             fMenu.Show()
             Dispose()
+        Else
+            MsgBox("Invalid Username or Password", MsgBoxStyle.Critical, "Warning !")
         End If
     End Sub
 

@@ -26,9 +26,9 @@ Partial Class fView
         Me.lblTitre = New System.Windows.Forms.Label()
         Me.lblTitre2 = New System.Windows.Forms.Label()
         Me.pblBoutons2 = New System.Windows.Forms.Panel()
+        Me.lstBoxListe = New System.Windows.Forms.ListBox()
         Me.btnCharger = New System.Windows.Forms.Button()
         Me.btnReturn = New System.Windows.Forms.Button()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.pnlTitre1.SuspendLayout()
         Me.pblBoutons2.SuspendLayout()
         Me.SuspendLayout()
@@ -71,12 +71,22 @@ Partial Class fView
         '
         'pblBoutons2
         '
-        Me.pblBoutons2.Controls.Add(Me.ListBox1)
+        Me.pblBoutons2.Controls.Add(Me.lstBoxListe)
         Me.pblBoutons2.Controls.Add(Me.btnCharger)
         Me.pblBoutons2.Location = New System.Drawing.Point(0, 151)
         Me.pblBoutons2.Name = "pblBoutons2"
         Me.pblBoutons2.Size = New System.Drawing.Size(284, 310)
         Me.pblBoutons2.TabIndex = 1
+        '
+        'lstBoxListe
+        '
+        Me.lstBoxListe.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstBoxListe.FormattingEnabled = True
+        Me.lstBoxListe.ItemHeight = 23
+        Me.lstBoxListe.Location = New System.Drawing.Point(45, 69)
+        Me.lstBoxListe.Name = "lstBoxListe"
+        Me.lstBoxListe.Size = New System.Drawing.Size(199, 211)
+        Me.lstBoxListe.TabIndex = 1
         '
         'btnCharger
         '
@@ -97,14 +107,6 @@ Partial Class fView
         Me.btnReturn.TabIndex = 5
         Me.btnReturn.Text = "Return"
         Me.btnReturn.UseVisualStyleBackColor = True
-        '
-        'ListBox1
-        '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(45, 69)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(199, 212)
-        Me.ListBox1.TabIndex = 1
         '
         'fView
         '
@@ -130,5 +132,5 @@ Partial Class fView
     Friend WithEvents btnReturn As Button
     Friend WithEvents lblTitre2 As Label
     Friend WithEvents lblTitre As Label
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents lstBoxListe As ListBox
 End Class

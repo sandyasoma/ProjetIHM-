@@ -29,6 +29,8 @@ Partial Class fListe_Spring
         Me.pbxSpring = New System.Windows.Forms.PictureBox()
         Me.btnReturn = New System.Windows.Forms.Button()
         Me.pbxSearch = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.pnlTitre.SuspendLayout()
         CType(Me.pbxSpring, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxSearch, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -98,11 +100,35 @@ Partial Class fListe_Spring
         Me.pbxSearch.TabIndex = 9
         Me.pbxSearch.TabStop = False
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Black
+        Me.Label1.Location = New System.Drawing.Point(104, 77)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(69, 23)
+        Me.Label1.TabIndex = 12
+        Me.Label1.Text = "lblTitre"
+        '
+        'ListBox1
+        '
+        Me.ListBox1.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 23
+        Me.ListBox1.Location = New System.Drawing.Point(12, 121)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(260, 303)
+        Me.ListBox1.TabIndex = 13
+        '
         'fListe_Spring
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 462)
+        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.pbxSearch)
         Me.Controls.Add(Me.btnReturn)
         Me.Controls.Add(Me.pbxSpring)
@@ -114,6 +140,7 @@ Partial Class fListe_Spring
         CType(Me.pbxSpring, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbxSearch, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -123,4 +150,6 @@ Partial Class fListe_Spring
     Friend WithEvents pbxSpring As PictureBox
     Friend WithEvents btnReturn As Button
     Friend WithEvents pbxSearch As PictureBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents ListBox1 As ListBox
 End Class

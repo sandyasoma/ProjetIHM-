@@ -37,12 +37,17 @@ Partial Class fMembers
         Me.cmbGender3 = New System.Windows.Forms.ComboBox()
         Me.cmbGender4 = New System.Windows.Forms.ComboBox()
         Me.cmbGender5 = New System.Windows.Forms.ComboBox()
-        Me.dteNaiss1 = New System.Windows.Forms.DateTimePicker()
-        Me.dteNaiss2 = New System.Windows.Forms.DateTimePicker()
-        Me.dteNaiss3 = New System.Windows.Forms.DateTimePicker()
-        Me.dteNaiss4 = New System.Windows.Forms.DateTimePicker()
-        Me.dteNaiss5 = New System.Windows.Forms.DateTimePicker()
         Me.btnValidate = New System.Windows.Forms.Button()
+        Me.lblAgeMb1 = New System.Windows.Forms.Label()
+        Me.lblAgeMb2 = New System.Windows.Forms.Label()
+        Me.lblAgeMb3 = New System.Windows.Forms.Label()
+        Me.lblAgeMb4 = New System.Windows.Forms.Label()
+        Me.lblAgeMb5 = New System.Windows.Forms.Label()
+        Me.txtAgeMb2 = New System.Windows.Forms.TextBox()
+        Me.txtAgeMb3 = New System.Windows.Forms.TextBox()
+        Me.txtAgeMb4 = New System.Windows.Forms.TextBox()
+        Me.txtAgeMb5 = New System.Windows.Forms.TextBox()
+        Me.txtAgeMb1 = New System.Windows.Forms.TextBox()
         Me.pnlTitre1.SuspendLayout()
         CType(Me.pbxIcon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxIcon5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -197,46 +202,6 @@ Partial Class fMembers
         Me.cmbGender5.TabIndex = 14
         Me.cmbGender5.Text = "Gender"
         '
-        'dteNaiss1
-        '
-        Me.dteNaiss1.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dteNaiss1.Location = New System.Drawing.Point(165, 138)
-        Me.dteNaiss1.Name = "dteNaiss1"
-        Me.dteNaiss1.Size = New System.Drawing.Size(107, 26)
-        Me.dteNaiss1.TabIndex = 15
-        '
-        'dteNaiss2
-        '
-        Me.dteNaiss2.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dteNaiss2.Location = New System.Drawing.Point(165, 183)
-        Me.dteNaiss2.Name = "dteNaiss2"
-        Me.dteNaiss2.Size = New System.Drawing.Size(107, 26)
-        Me.dteNaiss2.TabIndex = 16
-        '
-        'dteNaiss3
-        '
-        Me.dteNaiss3.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dteNaiss3.Location = New System.Drawing.Point(165, 234)
-        Me.dteNaiss3.Name = "dteNaiss3"
-        Me.dteNaiss3.Size = New System.Drawing.Size(107, 26)
-        Me.dteNaiss3.TabIndex = 17
-        '
-        'dteNaiss4
-        '
-        Me.dteNaiss4.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dteNaiss4.Location = New System.Drawing.Point(165, 282)
-        Me.dteNaiss4.Name = "dteNaiss4"
-        Me.dteNaiss4.Size = New System.Drawing.Size(107, 26)
-        Me.dteNaiss4.TabIndex = 18
-        '
-        'dteNaiss5
-        '
-        Me.dteNaiss5.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dteNaiss5.Location = New System.Drawing.Point(165, 330)
-        Me.dteNaiss5.Name = "dteNaiss5"
-        Me.dteNaiss5.Size = New System.Drawing.Size(107, 26)
-        Me.dteNaiss5.TabIndex = 19
-        '
         'btnValidate
         '
         Me.btnValidate.Font = New System.Drawing.Font("Comic Sans MS", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -247,18 +212,108 @@ Partial Class fMembers
         Me.btnValidate.Text = "Validate"
         Me.btnValidate.UseVisualStyleBackColor = True
         '
+        'lblAgeMb1
+        '
+        Me.lblAgeMb1.AutoSize = True
+        Me.lblAgeMb1.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAgeMb1.Location = New System.Drawing.Point(153, 141)
+        Me.lblAgeMb1.Name = "lblAgeMb1"
+        Me.lblAgeMb1.Size = New System.Drawing.Size(36, 20)
+        Me.lblAgeMb1.TabIndex = 21
+        Me.lblAgeMb1.Text = "Age"
+        '
+        'lblAgeMb2
+        '
+        Me.lblAgeMb2.AutoSize = True
+        Me.lblAgeMb2.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAgeMb2.Location = New System.Drawing.Point(153, 184)
+        Me.lblAgeMb2.Name = "lblAgeMb2"
+        Me.lblAgeMb2.Size = New System.Drawing.Size(36, 20)
+        Me.lblAgeMb2.TabIndex = 22
+        Me.lblAgeMb2.Text = "Age"
+        '
+        'lblAgeMb3
+        '
+        Me.lblAgeMb3.AutoSize = True
+        Me.lblAgeMb3.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAgeMb3.Location = New System.Drawing.Point(153, 240)
+        Me.lblAgeMb3.Name = "lblAgeMb3"
+        Me.lblAgeMb3.Size = New System.Drawing.Size(36, 20)
+        Me.lblAgeMb3.TabIndex = 23
+        Me.lblAgeMb3.Text = "Age"
+        '
+        'lblAgeMb4
+        '
+        Me.lblAgeMb4.AutoSize = True
+        Me.lblAgeMb4.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAgeMb4.Location = New System.Drawing.Point(153, 288)
+        Me.lblAgeMb4.Name = "lblAgeMb4"
+        Me.lblAgeMb4.Size = New System.Drawing.Size(36, 20)
+        Me.lblAgeMb4.TabIndex = 24
+        Me.lblAgeMb4.Text = "Age"
+        '
+        'lblAgeMb5
+        '
+        Me.lblAgeMb5.AutoSize = True
+        Me.lblAgeMb5.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAgeMb5.Location = New System.Drawing.Point(153, 331)
+        Me.lblAgeMb5.Name = "lblAgeMb5"
+        Me.lblAgeMb5.Size = New System.Drawing.Size(36, 20)
+        Me.lblAgeMb5.TabIndex = 25
+        Me.lblAgeMb5.Text = "Age"
+        '
+        'txtAgeMb2
+        '
+        Me.txtAgeMb2.Location = New System.Drawing.Point(212, 189)
+        Me.txtAgeMb2.Name = "txtAgeMb2"
+        Me.txtAgeMb2.Size = New System.Drawing.Size(46, 20)
+        Me.txtAgeMb2.TabIndex = 26
+        '
+        'txtAgeMb3
+        '
+        Me.txtAgeMb3.Location = New System.Drawing.Point(212, 240)
+        Me.txtAgeMb3.Name = "txtAgeMb3"
+        Me.txtAgeMb3.Size = New System.Drawing.Size(46, 20)
+        Me.txtAgeMb3.TabIndex = 27
+        '
+        'txtAgeMb4
+        '
+        Me.txtAgeMb4.Location = New System.Drawing.Point(212, 290)
+        Me.txtAgeMb4.Name = "txtAgeMb4"
+        Me.txtAgeMb4.Size = New System.Drawing.Size(46, 20)
+        Me.txtAgeMb4.TabIndex = 28
+        '
+        'txtAgeMb5
+        '
+        Me.txtAgeMb5.Location = New System.Drawing.Point(212, 336)
+        Me.txtAgeMb5.Name = "txtAgeMb5"
+        Me.txtAgeMb5.Size = New System.Drawing.Size(46, 20)
+        Me.txtAgeMb5.TabIndex = 29
+        '
+        'txtAgeMb1
+        '
+        Me.txtAgeMb1.Location = New System.Drawing.Point(212, 143)
+        Me.txtAgeMb1.Name = "txtAgeMb1"
+        Me.txtAgeMb1.Size = New System.Drawing.Size(46, 20)
+        Me.txtAgeMb1.TabIndex = 30
+        '
         'fMembers
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(284, 462)
+        Me.Controls.Add(Me.txtAgeMb1)
+        Me.Controls.Add(Me.txtAgeMb5)
+        Me.Controls.Add(Me.txtAgeMb4)
+        Me.Controls.Add(Me.txtAgeMb3)
+        Me.Controls.Add(Me.txtAgeMb2)
+        Me.Controls.Add(Me.lblAgeMb5)
+        Me.Controls.Add(Me.lblAgeMb4)
+        Me.Controls.Add(Me.lblAgeMb3)
+        Me.Controls.Add(Me.lblAgeMb2)
+        Me.Controls.Add(Me.lblAgeMb1)
         Me.Controls.Add(Me.btnValidate)
-        Me.Controls.Add(Me.dteNaiss5)
-        Me.Controls.Add(Me.dteNaiss4)
-        Me.Controls.Add(Me.dteNaiss3)
-        Me.Controls.Add(Me.dteNaiss2)
-        Me.Controls.Add(Me.dteNaiss1)
         Me.Controls.Add(Me.cmbGender5)
         Me.Controls.Add(Me.cmbGender4)
         Me.Controls.Add(Me.cmbGender3)
@@ -281,6 +336,7 @@ Partial Class fMembers
         CType(Me.pbxIcon3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbxIcon2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -298,10 +354,15 @@ Partial Class fMembers
     Friend WithEvents cmbGender3 As ComboBox
     Friend WithEvents cmbGender4 As ComboBox
     Friend WithEvents cmbGender5 As ComboBox
-    Friend WithEvents dteNaiss1 As DateTimePicker
-    Friend WithEvents dteNaiss2 As DateTimePicker
-    Friend WithEvents dteNaiss3 As DateTimePicker
-    Friend WithEvents dteNaiss4 As DateTimePicker
-    Friend WithEvents dteNaiss5 As DateTimePicker
     Friend WithEvents btnValidate As Button
+    Friend WithEvents lblAgeMb1 As Label
+    Friend WithEvents lblAgeMb2 As Label
+    Friend WithEvents lblAgeMb3 As Label
+    Friend WithEvents lblAgeMb4 As Label
+    Friend WithEvents lblAgeMb5 As Label
+    Friend WithEvents txtAgeMb2 As TextBox
+    Friend WithEvents txtAgeMb3 As TextBox
+    Friend WithEvents txtAgeMb4 As TextBox
+    Friend WithEvents txtAgeMb5 As TextBox
+    Friend WithEvents txtAgeMb1 As TextBox
 End Class
