@@ -34,7 +34,7 @@
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         fSummer.lstArticle.Items.Add(lstBread.SelectedItem)
         If (lstBread.SelectedItem = "Bread") Then
-            fSummer.calculerPrice(0.5)
+            fSummer.calculerPrice(0.5 * Convert.ToDouble(txtquan.Text))
 
         End If
         fSummer.Show()

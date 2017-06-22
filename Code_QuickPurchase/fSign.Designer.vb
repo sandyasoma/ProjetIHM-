@@ -50,8 +50,9 @@ Partial Class fSign
         Me.pnlTitre1.BackColor = System.Drawing.Color.Green
         Me.pnlTitre1.Controls.Add(Me.lblTitre)
         Me.pnlTitre1.Location = New System.Drawing.Point(0, 0)
+        Me.pnlTitre1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlTitre1.Name = "pnlTitre1"
-        Me.pnlTitre1.Size = New System.Drawing.Size(284, 60)
+        Me.pnlTitre1.Size = New System.Drawing.Size(379, 74)
         Me.pnlTitre1.TabIndex = 0
         '
         'lblTitre
@@ -59,9 +60,10 @@ Partial Class fSign
         Me.lblTitre.AutoSize = True
         Me.lblTitre.Font = New System.Drawing.Font("Comic Sans MS", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitre.ForeColor = System.Drawing.Color.White
-        Me.lblTitre.Location = New System.Drawing.Point(30, 0)
+        Me.lblTitre.Location = New System.Drawing.Point(40, 0)
+        Me.lblTitre.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTitre.Name = "lblTitre"
-        Me.lblTitre.Size = New System.Drawing.Size(242, 45)
+        Me.lblTitre.Size = New System.Drawing.Size(302, 55)
         Me.lblTitre.TabIndex = 0
         Me.lblTitre.Text = "QuickPurchase"
         Me.lblTitre.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -70,9 +72,10 @@ Partial Class fSign
         '
         Me.lblGender.AutoSize = True
         Me.lblGender.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGender.Location = New System.Drawing.Point(46, 107)
+        Me.lblGender.Location = New System.Drawing.Point(61, 132)
+        Me.lblGender.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblGender.Name = "lblGender"
-        Me.lblGender.Size = New System.Drawing.Size(67, 20)
+        Me.lblGender.Size = New System.Drawing.Size(85, 26)
         Me.lblGender.TabIndex = 1
         Me.lblGender.Text = "Gender*"
         '
@@ -80,9 +83,10 @@ Partial Class fSign
         '
         Me.lblLast.AutoSize = True
         Me.lblLast.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLast.Location = New System.Drawing.Point(31, 138)
+        Me.lblLast.Location = New System.Drawing.Point(41, 170)
+        Me.lblLast.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblLast.Name = "lblLast"
-        Me.lblLast.Size = New System.Drawing.Size(74, 20)
+        Me.lblLast.Size = New System.Drawing.Size(94, 26)
         Me.lblLast.TabIndex = 2
         Me.lblLast.Text = "Lastname"
         '
@@ -90,9 +94,10 @@ Partial Class fSign
         '
         Me.lblFirst.AutoSize = True
         Me.lblFirst.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFirst.Location = New System.Drawing.Point(27, 178)
+        Me.lblFirst.Location = New System.Drawing.Point(36, 219)
+        Me.lblFirst.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFirst.Name = "lblFirst"
-        Me.lblFirst.Size = New System.Drawing.Size(78, 20)
+        Me.lblFirst.Size = New System.Drawing.Size(99, 26)
         Me.lblFirst.TabIndex = 3
         Me.lblFirst.Text = "Firstname"
         '
@@ -100,9 +105,10 @@ Partial Class fSign
         '
         Me.lblDate.AutoSize = True
         Me.lblDate.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDate.Location = New System.Drawing.Point(69, 215)
+        Me.lblDate.Location = New System.Drawing.Point(92, 265)
+        Me.lblDate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDate.Name = "lblDate"
-        Me.lblDate.Size = New System.Drawing.Size(44, 20)
+        Me.lblDate.Size = New System.Drawing.Size(55, 26)
         Me.lblDate.TabIndex = 4
         Me.lblDate.Text = "Age*"
         '
@@ -110,9 +116,10 @@ Partial Class fSign
         '
         Me.lblAd.AutoSize = True
         Me.lblAd.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAd.Location = New System.Drawing.Point(38, 255)
+        Me.lblAd.Location = New System.Drawing.Point(51, 314)
+        Me.lblAd.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblAd.Name = "lblAd"
-        Me.lblAd.Size = New System.Drawing.Size(67, 20)
+        Me.lblAd.Size = New System.Drawing.Size(84, 26)
         Me.lblAd.TabIndex = 5
         Me.lblAd.Text = "Address"
         '
@@ -120,9 +127,10 @@ Partial Class fSign
         '
         Me.lblMail.AutoSize = True
         Me.lblMail.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMail.Location = New System.Drawing.Point(52, 291)
+        Me.lblMail.Location = New System.Drawing.Point(69, 358)
+        Me.lblMail.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblMail.Name = "lblMail"
-        Me.lblMail.Size = New System.Drawing.Size(53, 20)
+        Me.lblMail.Size = New System.Drawing.Size(68, 26)
         Me.lblMail.TabIndex = 6
         Me.lblMail.Text = "E-Mail"
         '
@@ -130,9 +138,10 @@ Partial Class fSign
         '
         Me.lblUser.AutoSize = True
         Me.lblUser.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUser.Location = New System.Drawing.Point(28, 334)
+        Me.lblUser.Location = New System.Drawing.Point(37, 411)
+        Me.lblUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblUser.Name = "lblUser"
-        Me.lblUser.Size = New System.Drawing.Size(85, 20)
+        Me.lblUser.Size = New System.Drawing.Size(109, 26)
         Me.lblUser.TabIndex = 7
         Me.lblUser.Text = "Username*"
         '
@@ -140,60 +149,69 @@ Partial Class fSign
         '
         Me.lblPswd.AutoSize = True
         Me.lblPswd.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPswd.Location = New System.Drawing.Point(31, 373)
+        Me.lblPswd.Location = New System.Drawing.Point(41, 459)
+        Me.lblPswd.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPswd.Name = "lblPswd"
-        Me.lblPswd.Size = New System.Drawing.Size(82, 20)
+        Me.lblPswd.Size = New System.Drawing.Size(104, 26)
         Me.lblPswd.TabIndex = 8
         Me.lblPswd.Text = "Password*"
         '
         'txtLast
         '
-        Me.txtLast.Location = New System.Drawing.Point(131, 138)
+        Me.txtLast.Location = New System.Drawing.Point(175, 170)
+        Me.txtLast.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtLast.Name = "txtLast"
-        Me.txtLast.Size = New System.Drawing.Size(141, 20)
+        Me.txtLast.Size = New System.Drawing.Size(187, 22)
         Me.txtLast.TabIndex = 10
         '
         'txtFirst
         '
-        Me.txtFirst.Location = New System.Drawing.Point(131, 178)
+        Me.txtFirst.Location = New System.Drawing.Point(175, 219)
+        Me.txtFirst.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtFirst.Name = "txtFirst"
-        Me.txtFirst.Size = New System.Drawing.Size(141, 20)
+        Me.txtFirst.Size = New System.Drawing.Size(187, 22)
         Me.txtFirst.TabIndex = 11
         '
         'txtAd
         '
-        Me.txtAd.Location = New System.Drawing.Point(131, 255)
+        Me.txtAd.Location = New System.Drawing.Point(175, 314)
+        Me.txtAd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtAd.Name = "txtAd"
-        Me.txtAd.Size = New System.Drawing.Size(141, 20)
+        Me.txtAd.Size = New System.Drawing.Size(187, 22)
         Me.txtAd.TabIndex = 13
         '
         'txtMail
         '
-        Me.txtMail.Location = New System.Drawing.Point(131, 291)
+        Me.txtMail.Location = New System.Drawing.Point(175, 358)
+        Me.txtMail.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtMail.Name = "txtMail"
-        Me.txtMail.Size = New System.Drawing.Size(141, 20)
+        Me.txtMail.Size = New System.Drawing.Size(187, 22)
         Me.txtMail.TabIndex = 14
         '
         'txtUser
         '
-        Me.txtUser.Location = New System.Drawing.Point(131, 334)
+        Me.txtUser.Location = New System.Drawing.Point(175, 411)
+        Me.txtUser.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtUser.Name = "txtUser"
-        Me.txtUser.Size = New System.Drawing.Size(141, 20)
+        Me.txtUser.Size = New System.Drawing.Size(187, 22)
         Me.txtUser.TabIndex = 15
         '
         'txtPswd
         '
-        Me.txtPswd.Location = New System.Drawing.Point(131, 373)
+        Me.txtPswd.Location = New System.Drawing.Point(175, 459)
+        Me.txtPswd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPswd.Name = "txtPswd"
-        Me.txtPswd.Size = New System.Drawing.Size(141, 20)
+        Me.txtPswd.Size = New System.Drawing.Size(187, 22)
         Me.txtPswd.TabIndex = 16
+        Me.txtPswd.UseSystemPasswordChar = True
         '
         'btnSign
         '
         Me.btnSign.Font = New System.Drawing.Font("Comic Sans MS", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSign.Location = New System.Drawing.Point(31, 415)
+        Me.btnSign.Location = New System.Drawing.Point(41, 511)
+        Me.btnSign.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSign.Name = "btnSign"
-        Me.btnSign.Size = New System.Drawing.Size(226, 35)
+        Me.btnSign.Size = New System.Drawing.Size(301, 43)
         Me.btnSign.TabIndex = 17
         Me.btnSign.Text = "Sign up"
         Me.btnSign.UseVisualStyleBackColor = True
@@ -201,9 +219,10 @@ Partial Class fSign
         'btnReturn
         '
         Me.btnReturn.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnReturn.Location = New System.Drawing.Point(12, 66)
+        Me.btnReturn.Location = New System.Drawing.Point(16, 81)
+        Me.btnReturn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnReturn.Name = "btnReturn"
-        Me.btnReturn.Size = New System.Drawing.Size(67, 29)
+        Me.btnReturn.Size = New System.Drawing.Size(89, 36)
         Me.btnReturn.TabIndex = 18
         Me.btnReturn.Text = "Return"
         Me.btnReturn.UseVisualStyleBackColor = True
@@ -211,24 +230,26 @@ Partial Class fSign
         'cbxGender
         '
         Me.cbxGender.FormattingEnabled = True
-        Me.cbxGender.Location = New System.Drawing.Point(131, 107)
+        Me.cbxGender.Location = New System.Drawing.Point(175, 132)
+        Me.cbxGender.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxGender.Name = "cbxGender"
-        Me.cbxGender.Size = New System.Drawing.Size(46, 21)
+        Me.cbxGender.Size = New System.Drawing.Size(60, 24)
         Me.cbxGender.TabIndex = 19
         '
         'txtAge
         '
-        Me.txtAge.Location = New System.Drawing.Point(131, 217)
+        Me.txtAge.Location = New System.Drawing.Point(175, 267)
+        Me.txtAge.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtAge.Name = "txtAge"
-        Me.txtAge.Size = New System.Drawing.Size(46, 20)
+        Me.txtAge.Size = New System.Drawing.Size(60, 22)
         Me.txtAge.TabIndex = 20
         '
         'fSign
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(284, 462)
+        Me.ClientSize = New System.Drawing.Size(379, 569)
         Me.Controls.Add(Me.txtAge)
         Me.Controls.Add(Me.cbxGender)
         Me.Controls.Add(Me.btnReturn)
@@ -248,6 +269,7 @@ Partial Class fSign
         Me.Controls.Add(Me.lblLast)
         Me.Controls.Add(Me.lblGender)
         Me.Controls.Add(Me.pnlTitre1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "fSign"
         Me.Text = "Sign up !"
         Me.pnlTitre1.ResumeLayout(False)
