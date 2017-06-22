@@ -6,10 +6,6 @@
     End Sub
 
     'Appuyer sur la touche entrer pour valider
-    Private Sub txtSearch_Validated(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtSearch.Validated
-        EventValidatedSub()
-    End Sub
-
     Private Sub txtSearch_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtSearch.KeyPress
         If (e.KeyChar = ChrW(13)) Then
             EventValidatedSub()
