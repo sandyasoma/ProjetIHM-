@@ -1,6 +1,6 @@
 ﻿Public Class fList
     Dim priceTot As Double = 0
-
+    'permet de calculer le pri en prenant en paramètre le prix d'un article
     Public Sub calculerPrice(price As Double)
         priceTot += price
         lblprice.Text = priceTot.ToString
@@ -77,19 +77,20 @@
 
         End If
     End Sub
-
+    'Message de confirmation quand on envoie une liste
     Private Sub btnSend_Click(sender As Object, e As EventArgs) Handles btnSend.Click
         If (lblprice.Text <> "0.0") Then
             MsgBox("Your List has been sent !")
             fResearch.Dispose()
         Else
-            MsgBox("Empty List !")
+            MsgBox("Empty List !") 'Si la liste est vide
         End If
     End Sub
 
     Private Sub btnfinish_Click(sender As Object, e As EventArgs) Handles btnfinish.Click
         If (lblprice.Text = "0.0" Or lblprice.Text = "0") Then
-            MsgBox("Empty List !")
+            MsgBox("Empty List !") 'Si la liste est vide
+            'Sinon on affcihe dans la fenetre fPay le prix total et on supprime la liste courantes de la liste de fView qui répertorie toutes les listes
         Else
             fPay.lblValTot.Text = lblprice.Text
             fPay.Show()
@@ -98,7 +99,7 @@
             fResearch.Dispose()
         End If
     End Sub
-
+    'Si on clique sur l'icone rechercher alors on est redirigé vers ma fenetre Search
     Private Sub pbxSearch_Click(sender As Object, e As EventArgs) Handles pbxSearch.Click
         fSearch.Show()
     End Sub

@@ -23,10 +23,13 @@
 
     End Sub
 
+    'la fenetre courante s'affcihe de 2 facons soit a partir du menu soit a partir de fQuestionAdd donc on vérifie ici de quelle fenêtre est issue fNameList
     Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
+        'Si elle est issue de fQuestionAdd alors on retourne à cette fenetre
         If (fQuestionAdd.lblArticle.Text <> "") Then
             fQuestionAdd.Show()
             Dispose()
+            'Sinon on retourne au menu
         Else
             fMenu.BringToFront()
             Dispose()

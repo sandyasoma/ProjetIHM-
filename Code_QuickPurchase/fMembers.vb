@@ -12,6 +12,7 @@
     End Sub
 
     Private Sub fMembers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'permet de choisir entre "Female" et "Male" dans les comboBox
         Dim gende As Array
         gende = System.Enum.GetValues(GetType(Genders))
         For Each gen In gende
@@ -25,13 +26,14 @@
     End Sub
 
     Private Sub btnValidate_Click(sender As Object, e As EventArgs) Handles btnValidate.Click
+        'on affecte au valeur par défaut de la config persistante les membres de la famille
         My.Settings.mb1Gen = cmbGender1.Text
         My.Settings.mb2Gen = cmbGender2.Text
         My.Settings.mb3Gen = cmbGender3.Text
         My.Settings.mb4Gen = cmbGender4.Text
         My.Settings.mb5Gen = cmbGender5.Text
 
-        'Pour éviter les erreurs on vérifie que les champs d'entrées de l'âge ne soient pas vides.
+        'on convertit les âges entrés par en entier
         If (txtAgeMb1.Text <> "") Then
             My.Settings.mb1Age = (Convert.ToInt16(txtAgeMb1.Text))
         End If

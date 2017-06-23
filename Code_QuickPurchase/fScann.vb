@@ -1,6 +1,6 @@
 ﻿Public Class fScann
 
-
+    'on retourne a la fenêtre chercher
     Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
         fSearch.Show()
         Dispose()
@@ -22,6 +22,7 @@
 
     End Sub
 
+    'ici par défaut la recherche prendra "bread" et on selectionne "Soft bread" dans la listbox Article
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
 
         fResearch.Show()

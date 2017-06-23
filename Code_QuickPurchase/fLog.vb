@@ -12,6 +12,7 @@
     End Sub
 
     Private Sub btnLog_Click(sender As Object, e As EventArgs) Handles btnLog.Click
+        'Verification des données bon pseudo et mdp
         If (txtUser.Text = My.Settings.Username And txtPswd.Text = My.Settings.Password) Then
             fMenu.Show()
             Dispose()

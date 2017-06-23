@@ -1,7 +1,5 @@
 ﻿Public Class fLook
-    Private Sub lblTitre2_Click(sender As Object, e As EventArgs) 
 
-    End Sub
     'Là on gère la fonctionnalité complémentaire de notre application
     Private Sub fLook_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label5.Text = My.Settings.Username
@@ -56,12 +54,14 @@
             End If
         End If
     End Sub
-
+    'on retourne au menu
     Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
         fMenu.Show()
         Dispose()
     End Sub
 
+
+    'On affiche dans fQuestionAdd selon ce que l'utilsateur choisi
     Private Sub pbxFemale_Click(sender As Object, e As EventArgs) Handles pbxFemale.Click
         fQuestionAdd.lblArticle.Text = "Lipstick"
         fQuestionAdd.Show()

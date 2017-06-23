@@ -8,12 +8,12 @@
     End Sub
     Private Sub btnSign_Click(sender As Object, e As EventArgs) Handles btnSign.Click
         If (txtAge.Text = "") Then
-            MsgBox("Please, enter fields with a * !", MsgBoxStyle.Critical, "Warning !")
+            MsgBox("Please, enter fields with a * !", MsgBoxStyle.Critical, "Warning !") 'On verifie que tous les champs obligatoire sont rentrés
         Else
             My.Settings.LastName = txtLast.Text
 
             My.Settings.FirstName = txtFirst.Text
-            My.Settings.Age = (Convert.ToInt16(txtAge.Text))
+            My.Settings.Age = (Convert.ToInt16(txtAge.Text)) 'On convertit l'age en entier
             My.Settings.Address = txtAd.Text
 
             My.Settings.Mail = txtMail.Text
@@ -21,6 +21,7 @@
             My.Settings.Username = txtUser.Text
 
             My.Settings.Password = txtPswd.Text
+            'Verifie si la personne n'est pas mineure
             If (My.Settings.Age < 18) Then
                 MsgBox("You are MINOR !", MsgBoxStyle.Critical, "Warning !")
             Else
@@ -28,10 +29,6 @@
                 Dispose() 'on ferme la fenêtre courante'
             End If
         End If
-
-    End Sub
-
-    Private Sub dteNaiss_ValueChanged(sender As Object, e As EventArgs) 
 
     End Sub
 
@@ -49,6 +46,7 @@
     End Sub
 
     Private Sub fSign_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Permet d'ajouter le genre de la personne
         Dim gender As Array
         gender = System.Enum.GetValues(GetType(Gender))
         For Each gen In gender
