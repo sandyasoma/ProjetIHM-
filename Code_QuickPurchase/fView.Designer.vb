@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class fView
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,16 +20,17 @@ Partial Class fView
     'REMARQUE : la procédure suivante est requise par le Concepteur Windows Form
     'Elle peut être modifiée à l'aide du Concepteur Windows Form.  
     'Ne la modifiez pas à l'aide de l'éditeur de code.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.pnlTitre1 = New System.Windows.Forms.Panel()
         Me.lblTitre = New System.Windows.Forms.Label()
         Me.lblTitre2 = New System.Windows.Forms.Label()
         Me.pblBoutons2 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnModify = New System.Windows.Forms.Button()
         Me.lstBoxListe = New System.Windows.Forms.ListBox()
         Me.btnCharger = New System.Windows.Forms.Button()
         Me.btnReturn = New System.Windows.Forms.Button()
-        Me.btnModify = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.pnlTitre1.SuspendLayout()
         Me.pblBoutons2.SuspendLayout()
@@ -73,7 +74,7 @@ Partial Class fView
         '
         'pblBoutons2
         '
-        Me.pblBoutons2.Controls.Add(Me.btnDelete)
+        Me.pblBoutons2.Controls.Add(Me.Button1)
         Me.pblBoutons2.Controls.Add(Me.btnModify)
         Me.pblBoutons2.Controls.Add(Me.lstBoxListe)
         Me.pblBoutons2.Controls.Add(Me.btnCharger)
@@ -81,6 +82,26 @@ Partial Class fView
         Me.pblBoutons2.Name = "pblBoutons2"
         Me.pblBoutons2.Size = New System.Drawing.Size(284, 310)
         Me.pblBoutons2.TabIndex = 1
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(12, 270)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(67, 29)
+        Me.Button1.TabIndex = 8
+        Me.Button1.Text = "View"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'btnModify
+        '
+        Me.btnModify.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModify.Location = New System.Drawing.Point(205, 270)
+        Me.btnModify.Name = "btnModify"
+        Me.btnModify.Size = New System.Drawing.Size(67, 29)
+        Me.btnModify.TabIndex = 6
+        Me.btnModify.Text = "Modify"
+        Me.btnModify.UseVisualStyleBackColor = True
         '
         'lstBoxListe
         '
@@ -112,23 +133,13 @@ Partial Class fView
         Me.btnReturn.Text = "Return"
         Me.btnReturn.UseVisualStyleBackColor = True
         '
-        'btnModify
-        '
-        Me.btnModify.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModify.Location = New System.Drawing.Point(205, 270)
-        Me.btnModify.Name = "btnModify"
-        Me.btnModify.Size = New System.Drawing.Size(67, 29)
-        Me.btnModify.TabIndex = 6
-        Me.btnModify.Text = "Modify"
-        Me.btnModify.UseVisualStyleBackColor = True
-        '
         'btnDelete
         '
         Me.btnDelete.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelete.Location = New System.Drawing.Point(12, 270)
+        Me.btnDelete.Location = New System.Drawing.Point(205, 90)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(67, 29)
-        Me.btnDelete.TabIndex = 7
+        Me.btnDelete.TabIndex = 9
         Me.btnDelete.Text = "Delete"
         Me.btnDelete.UseVisualStyleBackColor = True
         '
@@ -138,6 +149,7 @@ Partial Class fView
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(284, 462)
+        Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnReturn)
         Me.Controls.Add(Me.pblBoutons2)
         Me.Controls.Add(Me.pnlTitre1)
@@ -157,6 +169,7 @@ Partial Class fView
     Friend WithEvents lblTitre2 As Label
     Friend WithEvents lblTitre As Label
     Friend WithEvents lstBoxListe As ListBox
-    Friend WithEvents btnDelete As Button
     Friend WithEvents btnModify As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents btnDelete As Button
 End Class

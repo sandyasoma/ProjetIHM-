@@ -72,22 +72,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="fEaster.Designer.vb">
-      <DependentUpon>fEaster.vb</DependentUpon>
+    <Compile Include="fList.Designer.vb">
+      <DependentUpon>fList.vb</DependentUpon>
     </Compile>
-    <Compile Include="fEaster.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fListe_autumn.Designer.vb">
-      <DependentUpon>fListe_autumn.vb</DependentUpon>
-    </Compile>
-    <Compile Include="fListe_autumn.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fListe_Christmas.Designer.vb">
-      <DependentUpon>fListe_Christmas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="fListe_Christmas.vb">
+    <Compile Include="fList.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fLog.Designer.vb">
@@ -163,18 +151,6 @@
     <Compile Include="fMenu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fListSpring.designer.vb">
-      <DependentUpon>fListSpring.vb</DependentUpon>
-    </Compile>
-    <Compile Include="fListSpring.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fSummer.Designer.vb">
-      <DependentUpon>fSummer.vb</DependentUpon>
-    </Compile>
-    <Compile Include="fSummer.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -198,14 +174,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="fEaster.resx">
-      <DependentUpon>fEaster.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fListe_autumn.resx">
-      <DependentUpon>fListe_autumn.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fListe_Christmas.resx">
-      <DependentUpon>fListe_Christmas.vb</DependentUpon>
+    <EmbeddedResource Include="fList.resx">
+      <DependentUpon>fList.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fLog.resx">
       <DependentUpon>fLog.vb</DependentUpon>
@@ -242,12 +212,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fMenu.resx">
       <DependentUpon>fMenu.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fListSpring.resx">
-      <DependentUpon>fListSpring.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fSummer.resx">
-      <DependentUpon>fSummer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

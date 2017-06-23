@@ -36,9 +36,6 @@ C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\
 C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\bin\Debug\Code_QuickPurchase.pdb
 C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\bin\Debug\Code_QuickPurchase.xml
 C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.vbprojResolveAssemblyReference.cache
-C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.fEaster.resources
-C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.fListe_autumn.resources
-C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.fListe_Christmas.resources
 C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.fLog.resources
 C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.fMembers.resources
 C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.fNameList.resources
@@ -49,8 +46,6 @@ C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\
 C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.fSearch.resources
 C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.fSign.resources
 C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.fMenu.resources
-C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.fListe_Spring.resources
-C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.fSummer.resources
 C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.Resources.resources
 C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.fView.resources
 C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.vbproj.GenerateResource.Cache
@@ -84,3 +79,4 @@ C:\Users\Othmane\Desktop\informatique\IUT\S2\ihm\projetSandya\ProjetIHM-\Code_Qu
 C:\Users\Othmane\Desktop\informatique\IUT\S2\ihm\projetSandya\ProjetIHM-\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.Resources.resources
 C:\Users\Othmane\Desktop\informatique\IUT\S2\ihm\projetSandya\ProjetIHM-\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.fView.resources
 C:\Users\Othmane\Desktop\informatique\IUT\S2\ihm\projetSandya\ProjetIHM-\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.vbproj.GenerateResource.Cache
+C:\Users\mdtlcladm.TUELAN-2462TPL\Desktop\Code_QuickPurchase\Code_QuickPurchase\obj\Debug\Code_QuickPurchase.fList.resources

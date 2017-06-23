@@ -8,16 +8,32 @@
         fMenu.BringToFront()
     End Sub
 
-    Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
-        If MsgBox("Delete ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = MsgBoxResult.Yes Then
-            lstBoxListe.Items.Remove(lstBoxListe.SelectedItem)
-
-        End If
-
-    End Sub
-
     Private Sub btnModify_Click(sender As Object, e As EventArgs) Handles btnModify.Click
         fSearch.Show()
         fSearch.BringToFront()
+    End Sub
+
+
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        fList.Label1.Text = lstBoxListe.SelectedItem
+        fList.Show()
+
+    End Sub
+
+    Private Sub btnCharger_Click(sender As Object, e As EventArgs) Handles btnCharger.Click
+
+    End Sub
+
+    Private Sub fView_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'pour supprimer une liste
+        If (lstBoxListe.SelectedItem <> "") Then
+            lstBoxListe.Items.Remove(lstBoxListe.SelectedItem)
+        End If
+    End Sub
+    Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
+        If MsgBox("Delete ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = MsgBoxResult.Yes Then
+            lstBoxListe.Items.Remove(lstBoxListe.SelectedItem)
+        End If
     End Sub
 End Class
