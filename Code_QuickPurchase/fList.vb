@@ -7,6 +7,7 @@
     End Sub
     Private Sub fList_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+
         'Ici on gère l'affichage de la liste en fonction de la période de l'année
         'Si on est en été :
         If (Date.Now.Month = 6 And Date.Now.Day >= 21 And Date.Now.Day <= 30) Then
@@ -103,6 +104,10 @@
     End Sub
 
     Private Sub lblTitre_Click(sender As Object, e As EventArgs) Handles lblTitre.Click
+
+    End Sub
+
+    Private Sub lstArticle_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstArticle.SelectedIndexChanged
 
     End Sub
 End Class

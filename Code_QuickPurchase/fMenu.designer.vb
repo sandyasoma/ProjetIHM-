@@ -33,6 +33,7 @@ Partial Class fMenu
         Me.btnLook = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.pnlTitre.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -40,6 +41,7 @@ Partial Class fMenu
         'pnlTitre
         '
         Me.pnlTitre.BackColor = System.Drawing.Color.Green
+        Me.pnlTitre.Controls.Add(Me.Label5)
         Me.pnlTitre.Controls.Add(Me.lblMenu)
         Me.pnlTitre.Controls.Add(Me.lblTitre)
         Me.pnlTitre.Location = New System.Drawing.Point(-1, 0)
@@ -133,6 +135,16 @@ Partial Class fMenu
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.DeepPink
+        Me.Label5.Location = New System.Drawing.Point(206, 31)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(0, 23)
+        Me.Label5.TabIndex = 10
+        '
         'fMenu
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
@@ -163,4 +175,5 @@ Partial Class fMenu
     Friend WithEvents btnLook As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents Label5 As Label
 End Class

@@ -41,6 +41,8 @@ Partial Class fList
         Me.Label1 = New System.Windows.Forms.Label()
         Me.pbxSearch = New System.Windows.Forms.PictureBox()
         Me.btnReturn = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.pbxSummer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlTitre.SuspendLayout()
         CType(Me.pbxEaster, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -197,17 +199,18 @@ Partial Class fList
         Me.lstprice.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lstprice.FormattingEnabled = True
         Me.lstprice.ItemHeight = 23
-        Me.lstprice.Location = New System.Drawing.Point(188, 136)
+        Me.lstprice.Location = New System.Drawing.Point(188, 163)
         Me.lstprice.Name = "lstprice"
         Me.lstprice.Size = New System.Drawing.Size(82, 257)
         Me.lstprice.TabIndex = 23
         '
         'lstArticle
         '
+        Me.lstArticle.BackColor = System.Drawing.Color.White
         Me.lstArticle.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lstArticle.FormattingEnabled = True
         Me.lstArticle.ItemHeight = 23
-        Me.lstArticle.Location = New System.Drawing.Point(22, 136)
+        Me.lstArticle.Location = New System.Drawing.Point(12, 163)
         Me.lstArticle.Name = "lstArticle"
         Me.lstArticle.Size = New System.Drawing.Size(156, 257)
         Me.lstArticle.TabIndex = 22
@@ -216,11 +219,11 @@ Partial Class fList
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(96, 75)
+        Me.Label1.Location = New System.Drawing.Point(83, 74)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(69, 23)
+        Me.Label1.Size = New System.Drawing.Size(57, 19)
         Me.Label1.TabIndex = 21
         Me.Label1.Text = "lblTitre"
         '
@@ -244,12 +247,38 @@ Partial Class fList
         Me.btnReturn.Text = "Return"
         Me.btnReturn.UseVisualStyleBackColor = True
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Black
+        Me.Label3.Location = New System.Drawing.Point(34, 131)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(91, 27)
+        Me.Label3.TabIndex = 29
+        Me.Label3.Text = "Article :"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.Black
+        Me.Label4.Location = New System.Drawing.Point(184, 131)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(93, 27)
+        Me.Label4.TabIndex = 30
+        Me.Label4.Text = "Price : €"
+        '
         'fList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(284, 462)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.pbxPoubelle)
         Me.Controls.Add(Me.btnfinish)
         Me.Controls.Add(Me.btnSend)
@@ -300,4 +329,6 @@ Partial Class fList
     Friend WithEvents Label1 As Label
     Friend WithEvents pbxSearch As PictureBox
     Friend WithEvents btnReturn As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
 End Class
