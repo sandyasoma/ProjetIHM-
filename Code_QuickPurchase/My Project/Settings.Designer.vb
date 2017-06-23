@@ -104,7 +104,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("70")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("30")>  _
         Public Property Age() As Integer
             Get
                 Return CType(Me("Age"),Integer)
@@ -140,7 +140,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Male")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Female")>  _
         Public Property Gender() As String
             Get
                 Return CType(Me("Gender"),String)

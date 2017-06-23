@@ -15,7 +15,7 @@
       <Value Profile="(Default)">Admin</Value>
     </Setting>
     <Setting Name="Age" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">70</Value>
+      <Value Profile="(Default)">30</Value>
     </Setting>
     <Setting Name="Address" Type="System.String" Scope="User">
       <Value Profile="(Default)">11, Avenue du Rocher</Value>
@@ -24,7 +24,7 @@
       <Value Profile="(Default)">admin@hotmail.fr</Value>
     </Setting>
     <Setting Name="Gender" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Male</Value>
+      <Value Profile="(Default)">Female</Value>
     </Setting>
     <Setting Name="mb1Gen" Type="System.String" Scope="User">
       <Value Profile="(Default)">Male</Value>

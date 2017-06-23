@@ -124,7 +124,9 @@
     End Sub
 
     Private Sub fResearch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        If (fQuestionAdd.lblArticle.Text <> "") Then
+            txtSearch.Text = fQuestionAdd.lblArticle.Text
+        End If
     End Sub
 
     Private Sub txtquan_TextChanged(sender As Object, e As EventArgs) Handles txtquan.TextChanged

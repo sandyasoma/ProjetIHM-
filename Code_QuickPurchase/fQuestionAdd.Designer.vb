@@ -25,10 +25,6 @@ Partial Class fQuestionAdd
         Me.btnReturn = New System.Windows.Forms.Button()
         Me.btnExist = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.txtquan = New System.Windows.Forms.TextBox()
-        Me.lblquantity = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.lblPrice = New System.Windows.Forms.Label()
         Me.lblArticle = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
@@ -62,43 +58,6 @@ Partial Class fQuestionAdd
         Me.Button2.Text = "Add to a New List"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'txtquan
-        '
-        Me.txtquan.Location = New System.Drawing.Point(148, 122)
-        Me.txtquan.Name = "txtquan"
-        Me.txtquan.Size = New System.Drawing.Size(57, 20)
-        Me.txtquan.TabIndex = 47
-        '
-        'lblquantity
-        '
-        Me.lblquantity.AutoSize = True
-        Me.lblquantity.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblquantity.Location = New System.Drawing.Point(51, 118)
-        Me.lblquantity.Name = "lblquantity"
-        Me.lblquantity.Size = New System.Drawing.Size(91, 23)
-        Me.lblquantity.TabIndex = 46
-        Me.lblquantity.Text = " Quantity :"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(135, 79)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(48, 23)
-        Me.Label2.TabIndex = 45
-        Me.Label2.Text = "price"
-        '
-        'lblPrice
-        '
-        Me.lblPrice.AutoSize = True
-        Me.lblPrice.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrice.Location = New System.Drawing.Point(72, 79)
-        Me.lblPrice.Name = "lblPrice"
-        Me.lblPrice.Size = New System.Drawing.Size(57, 23)
-        Me.lblPrice.TabIndex = 44
-        Me.lblPrice.Text = "Price :"
-        '
         'lblArticle
         '
         Me.lblArticle.AutoSize = True
@@ -114,10 +73,6 @@ Partial Class fQuestionAdd
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(284, 262)
-        Me.Controls.Add(Me.txtquan)
-        Me.Controls.Add(Me.lblquantity)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.lblPrice)
         Me.Controls.Add(Me.lblArticle)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnExist)
@@ -132,9 +87,5 @@ Partial Class fQuestionAdd
     Friend WithEvents btnReturn As Button
     Friend WithEvents btnExist As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents txtquan As TextBox
-    Friend WithEvents lblquantity As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents lblPrice As Label
     Friend WithEvents lblArticle As Label
 End Class
