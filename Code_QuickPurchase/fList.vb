@@ -69,14 +69,17 @@
     Private Sub pbxPoubelle_Click(sender As Object, e As EventArgs) Handles pbxPoubelle.Click
         'pour supprimer un article avec son prix
         If (lstArticle.SelectedItem <> "" And lstprice.SelectedItem <> "") Then
+            priceTot -= Convert.ToInt32(lstprice.SelectedItem())
+            lblprice.Text = priceTot.ToString
             lstprice.Items.RemoveAt(lstArticle.SelectedIndex)
             lstArticle.Items.Remove(lstArticle.SelectedItem)
+
         End If
     End Sub
 
     Private Sub btnSend_Click(sender As Object, e As EventArgs) Handles btnSend.Click
         If (lblprice.Text <> "0.0") Then
-            MsgBox("Your List is send !")
+            MsgBox("Your List has been sent !")
             fResearch.Dispose()
         Else
             MsgBox("Empty List !")
@@ -84,19 +87,22 @@
     End Sub
 
     Private Sub btnfinish_Click(sender As Object, e As EventArgs) Handles btnfinish.Click
-        If (lblprice.Text <> "0.0") Then
+        If (lblprice.Text = "0.0" Or lblprice.Text = "0") Then
+            MsgBox("Empty List !")
+        Else
             fPay.lblValTot.Text = lblprice.Text
             fPay.Show()
+            fView.lstBoxListe.Items.Remove(Label1.Text)
             Dispose()
-
-            fView.lstBoxListe.Items.RemoveAt(Label1.Text)
             fResearch.Dispose()
-        Else
-            MsgBox("Empty List !")
         End If
     End Sub
 
     Private Sub pbxSearch_Click(sender As Object, e As EventArgs) Handles pbxSearch.Click
         fSearch.Show()
+    End Sub
+
+    Private Sub lblTitre_Click(sender As Object, e As EventArgs) Handles lblTitre.Click
+
     End Sub
 End Class

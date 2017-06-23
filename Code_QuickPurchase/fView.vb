@@ -16,12 +16,31 @@
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        fList.Label1.Text = lstBoxListe.SelectedItem
-        fList.Show()
-
+        If (lstBoxListe.SelectedItem = "Christmas List") Then
+            fList.pbxChristmas.Visible = True
+            fList.pnlTitre.BackColor = Color.Firebrick
+            fList.Show()
+        End If
+        If (lstBoxListe.SelectedItem = "Holidays List") Then
+            fList.pbxSummer.Visible = True
+            fList.pnlTitre.BackColor = Color.Gold
+            fList.Show()
+        End If
+        If (lstBoxListe.SelectedItem = "Easter List") Then
+            fList.pbxEaster.Visible = True
+            fList.pnlTitre.BackColor = Color.PaleVioletRed
+            fList.Show()
+        End If
+        If (lstBoxListe.SelectedItem <> "Christmas List" Or lstBoxListe.SelectedItem <> "Holidays List" Or lstBoxListe.SelectedItem <> "Easter List") Then
+            fList.Label1.Text = lstBoxListe.SelectedItem
+            fList.BringToFront()
+        End If
     End Sub
 
     Private Sub btnCharger_Click(sender As Object, e As EventArgs) Handles btnCharger.Click
+        lstBoxListe.Items.Add("Christmas List")
+        lstBoxListe.Items.Add("Holidays List")
+        lstBoxListe.Items.Add("Easter List")
 
     End Sub
 
